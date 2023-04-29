@@ -10,21 +10,10 @@ function Navbar() {
 
   const onMouseEnter = () => {
       setDropdown(true);
-      setIsHovering(true);
   };
 
   const onMouseLeave = () => {
       setDropdown(false);
-  };
-
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleStartButtonMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleStartButtonMouseLeave = () => {
-    setIsHovering(false);
   };
 
   return (
@@ -33,6 +22,7 @@ function Navbar() {
         <div className='navbar-container'>
             <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
               <Link to='/' className={dropdown ? 'nav-links nav-hover' : 'nav-links'}>
+                <img src='./image (1).png' alt='Logo' className='navbar-logo' />
                 Start
               </Link>
               {dropdown && <Dropdown />}

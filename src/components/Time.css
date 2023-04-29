@@ -1,14 +1,10 @@
 .time {
-  /* padding: 5.5px 16px 5.5px 16px;
-  box-shadow: 1px 1px 3px 0px #162d5b inset;
-  border: 0.3px solid #162d5b; */
   background-color: #C3C7CB;
-  border: 1px solid #969696;
   color: #000000;
   cursor: pointer;
   display: inline-block;
   margin: 0 3px;
-  padding: 5.5px 16px 5.5px 16px;
+  padding: 5.5px 8px 5.5px 8px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;

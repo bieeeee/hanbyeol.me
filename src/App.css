@@ -6,7 +6,8 @@
 }
 
 .background-image {
-  background-image: url('./images/background.png');
+  /* background-image: url('./images/89098.jpg'); */
+  background-color: rgb(255, 201, 39);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
