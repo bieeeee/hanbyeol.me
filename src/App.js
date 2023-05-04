@@ -5,14 +5,21 @@ import Home from './components/pages/Home';
 
 function App() {
   return (
-    <div className='background-image'>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' exact element={<Home />} />
-        </Routes>
-      </Router>
-    </div>
+    <>
+      {/* <section id="up"></section>
+      <section id="down"></section>
+      <section id="right"></section>
+      <section id="left"></section> */}
+
+      <div className='background-image'>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' exact element={<Home />} />
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 
