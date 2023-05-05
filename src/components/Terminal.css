@@ -1,5 +1,6 @@
 .terminal-container {
   width: 80%;
+  height: fit-content;
   margin: 0 auto;
   padding: 5px 5px 5px 5px;
   background-color: #d4d4d4;
@@ -21,6 +22,7 @@
 }
 
 .terminal-content {
+  height: fit-content;
   border: 1px solid black;
   background-color: black;
   color: greenyellow;

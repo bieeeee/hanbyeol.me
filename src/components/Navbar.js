@@ -21,7 +21,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
             <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <Link to='/' className={dropdown ? 'nav-links nav-hover' : 'nav-links'}>
+              <Link className={dropdown ? 'nav-links nav-hover' : 'nav-links'}>
                 <img src='./image (1).png' alt='Logo' className='navbar-logo' />
                 Start
               </Link>

@@ -19,15 +19,20 @@ function Modal() {
         onClick={toggleModal}
         className='btn-modal'>
         <img src='folder.png' alt='folder' />
-        <h3>About me</h3>
+        <h3>Technologies</h3>
       </div>
 
       {modal && (
         <div className='modal'>
             <div onClick={toggleModal} className='overlay'>
-              <div className='modal-content'>
-                <p>content</p>
-                <button onClick={toggleModal} className='close-modal'>X</button>
+              <div className='modal-container'>
+                <div className="modal-bar">
+                  <p>Technologies</p>
+                  <button onClick={toggleModal} className='close-modal'>X</button>
+                </div>
+                <div className="modal-content">
+
+                </div>
               </div>
             </div>
         </div>)
