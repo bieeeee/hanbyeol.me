@@ -16,12 +16,17 @@ function Navbar() {
       setDropdown(false);
   };
 
+  const onClick = () => {
+    setDropdown(!dropdown);
+  };
+
+
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-            <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-              <Link className={dropdown ? 'nav-links nav-hover' : 'nav-links'}>
+            <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
+              <Link className={dropdown ? 'nav-links hover' : 'nav-links'}>
                 <img src='./image (1).png' alt='Logo' className='navbar-logo' />
                 Start
               </Link>
