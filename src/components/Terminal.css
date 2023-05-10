@@ -32,3 +32,8 @@
   border-top: 2px solid #5b5b5b;
   border-right: 2px solid white;
 }
+
+.Typewriter {
+  font-size: 21px;
+  line-height: 23px;
+}
