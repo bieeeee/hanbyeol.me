@@ -6,11 +6,6 @@ import Home from './components/pages/Home';
 function App() {
   return (
     <>
-      {/* <section id="up"></section>
-      <section id="down"></section>
-      <section id="right"></section>
-      <section id="left"></section> */}
-
       <div className='background-image'>
         <Router>
           <Navbar />

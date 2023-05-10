@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown';
-import { Button } from './Button';
 import './Navbar.css';
 import Time from './Time';
 
@@ -9,11 +8,11 @@ function Navbar() {
   const[dropdown, setDropdown] = useState(false);
 
   const onMouseEnter = () => {
-      setDropdown(true);
+    setDropdown(true);
   };
 
   const onMouseLeave = () => {
-      setDropdown(false);
+    setDropdown(false);
   };
 
   const onClick = () => {
@@ -26,7 +25,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
             <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
-              <Link className={dropdown ? 'nav-links hover' : 'nav-links'}>
+              <Link className={dropdown ? 'nav-hover' : 'nav-links'}>
                 <img src='./image (1).png' alt='Logo' className='navbar-logo' />
                 Start
               </Link>

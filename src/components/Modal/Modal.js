@@ -15,28 +15,53 @@ function Modal() {
 
   return (
     <>
-      <div
-        onClick={toggleModal}
-        className='btn-modal'>
-        <img src='folder.png' alt='folder' />
-        <h3>Technologies</h3>
-      </div>
+      <div className='folders'>
+        <div
+          onClick={toggleModal}
+          className='btn-modal'>
+          <img src='folder.png' alt='folder' />
+          <h3>Skills</h3>
+        </div>
 
-      {modal && (
-        <div className='modal'>
-            <div onClick={toggleModal} className='overlay'>
-              <div className='modal-container'>
-                <div className="modal-bar">
-                  <p>Technologies</p>
-                  <button onClick={toggleModal} className='close-modal'>X</button>
-                </div>
-                <div className="modal-content">
+        {modal && (
+          <div className='modal'>
+              <div onClick={toggleModal} className='overlay'>
+                <div className='modal-container'>
+                  <div className="modal-bar">
+                    <p>Skills</p>
+                    <button onClick={toggleModal} className='close-modal'>X</button>
+                  </div>
+                  <div className="modal-content">
 
+                  </div>
                 </div>
               </div>
-            </div>
-        </div>)
-      }
+          </div>)
+        }
+
+        <div
+          onClick={toggleModal}
+          className='btn-modal'>
+          <img src='folder.png' alt='folder' />
+          <h3>Projects</h3>
+        </div>
+
+        {modal && (
+          <div className='modal'>
+              <div onClick={toggleModal} className='overlay'>
+                <div className='modal-container'>
+                  <div className="modal-bar">
+                    <p>Projects</p>
+                    <button onClick={toggleModal} className='close-modal'>X</button>
+                  </div>
+                  <div className="modal-content">
+
+                  </div>
+                </div>
+              </div>
+          </div>)
+        }
+      </div>
     </>
   );
 }
