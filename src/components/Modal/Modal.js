@@ -1,38 +1,44 @@
 import React, { useState } from 'react'
 import "./Modal.css"
+import Skill from './Skill';
+import Project from './Project';
 
 function Modal() {
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!modal);
+  const [skillModal, setSkillModal] = useState(false);
+  const [projectModal, setProjectModal] = useState(false);
+
+  const toggleSkillModal = () => {
+    setSkillModal(!skillModal);
+  }
+  const toggleProjectModal = () => {
+    setProjectModal(!projectModal);
   }
 
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
+  // For hiding scroll purpose
+  // if(skillModal) {
+  //   document.body.classList.add('active-modal')
+  // } else {
+  //   document.body.classList.remove('active-modal')
+  // }
 
   return (
     <>
       <div className='folders'>
-        <div
-          onClick={toggleModal}
-          className='btn-modal'>
+        <div onClick={toggleSkillModal} className='btn-modal'>
           <img src='folder.png' alt='folder' />
           <h3>Skills</h3>
         </div>
 
-        {modal && (
+        {skillModal && (
           <div className='modal'>
-              <div onClick={toggleModal} className='overlay'>
+              <div onClick={toggleSkillModal} className='overlay'>
                 <div className='modal-container'>
                   <div className="modal-bar">
                     <p>Skills</p>
-                    <button onClick={toggleModal} className='close-modal'>X</button>
+                    <button onClick={toggleSkillModal} className='close-modal'>X</button>
                   </div>
                   <div className="modal-content">
-
+                    <Skill />
                   </div>
                 </div>
               </div>
@@ -40,22 +46,22 @@ function Modal() {
         }
 
         <div
-          onClick={toggleModal}
+          onClick={toggleProjectModal}
           className='btn-modal'>
           <img src='folder.png' alt='folder' />
           <h3>Projects</h3>
         </div>
 
-        {modal && (
+        {projectModal && (
           <div className='modal'>
-              <div onClick={toggleModal} className='overlay'>
+              <div onClick={toggleProjectModal} className='overlay'>
                 <div className='modal-container'>
                   <div className="modal-bar">
                     <p>Projects</p>
-                    <button onClick={toggleModal} className='close-modal'>X</button>
+                    <button onClick={toggleProjectModal} className='close-modal'>X</button>
                   </div>
                   <div className="modal-content">
-
+                    <Project />
                   </div>
                 </div>
               </div>
