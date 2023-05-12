@@ -1,0 +1,10 @@
+.skill-logo {
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skill-logo img {
+  height: 43px;
+  margin-bottom: -7px;
+}

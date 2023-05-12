@@ -34,10 +34,11 @@ function Modal() {
               <div onClick={toggleSkillModal} className='overlay'>
                 <div className='modal-container'>
                   <div className="modal-bar">
+                    <img src="folder-open.png" alt="folder" />
                     <p>Skills</p>
                     <button onClick={toggleSkillModal} className='close-modal'>X</button>
                   </div>
-                  <div className="modal-content">
+                  <div className="modal-content modal-skill">
                     <Skill />
                   </div>
                 </div>
