@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import "./Modal.css"
-import Planforyou from './Planforyou';
+import PlanForYou from './PlanForYou';
+import VarcharForYou from './VarcharForYou';
+import Hanbyeol from './Hanbyeol';
+import Zapfit from './Zapfit';
 
 export default function Project() {
   const [projectModalOne, setProjectModalOne] = useState(false);
@@ -43,11 +46,12 @@ export default function Project() {
             <div onClick={toggleProjectModalOne}>
               <div className='modal-container'>
                 <div className="modal-bar">
+                  <img src="folder-open.png" alt="folder" />
                   <p>Plan For You</p>
                   <button onClick={toggleProjectModalOne} className='close-modal'>X</button>
                 </div>
                 <div className="modal-content">
-                  <Planforyou />
+                  <PlanForYou />
                 </div>
               </div>
             </div>
@@ -66,11 +70,12 @@ export default function Project() {
             <div onClick={toggleProjectModalTwo}>
               <div className='modal-container'>
                 <div className="modal-bar">
+                  <img src="folder-open.png" alt="folder" />
                   <p>Varchar For You</p>
                   <button onClick={toggleProjectModalTwo} className='close-modal'>X</button>
                 </div>
                 <div className="modal-content">
-                  <Planforyou />
+                  <VarcharForYou />
                 </div>
               </div>
             </div>
@@ -89,11 +94,12 @@ export default function Project() {
             <div onClick={toggleProjectModalThree}>
               <div className='modal-container'>
                 <div className="modal-bar">
+                  <img src="folder-open.png" alt="folder" />
                   <p>hanbyeol.me</p>
                   <button onClick={toggleProjectModalThree} className='close-modal'>X</button>
                 </div>
                 <div className="modal-content">
-                  <Planforyou />
+                  <Hanbyeol />
                 </div>
               </div>
             </div>
@@ -112,11 +118,12 @@ export default function Project() {
             <div onClick={toggleProjectModalFour}>
               <div className='modal-container'>
                 <div className="modal-bar">
+                  <img src="folder-open.png" alt="folder" />
                   <p>zapfit.ca</p>
                   <button onClick={toggleProjectModalFour} className='close-modal'>X</button>
                 </div>
                 <div className="modal-content">
-                  <Planforyou />
+                  <Zapfit />
                 </div>
               </div>
             </div>
