@@ -34,8 +34,8 @@ body .active-modal {
   background: rgba(49,49,49,0.8);
 }
 .modal-container {
-  position: absolute;
-  top: 40%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
@@ -43,7 +43,7 @@ body .active-modal {
   min-width: 300px;
   /* width: 80%; */
   height: fit-content;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 5px 5px 5px 5px;
   background-color: #d4d4d4;
   border-top: 2px solid white;
@@ -95,10 +95,17 @@ body .active-modal {
   border-left: 2px solid #5b5b5b;
   border-top: 2px solid #5b5b5b;
   border-right: 2px solid white;
-}
-
-.modal-skill {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
 }
+
+.project-modal-icon {
+  margin: 0 auto;
+}
+
+/* .modal-skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+} */

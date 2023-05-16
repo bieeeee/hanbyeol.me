@@ -46,9 +46,7 @@ function Modal() {
           </div>)
         }
 
-        <div
-          onClick={toggleProjectModal}
-          className='btn-modal'>
+        <div onClick={toggleProjectModal} className='btn-modal'>
           <img src='folder.png' alt='folder' />
           <h3>Projects</h3>
         </div>
@@ -58,6 +56,7 @@ function Modal() {
               <div onClick={toggleProjectModal} className='overlay'>
                 <div className='modal-container'>
                   <div className="modal-bar">
+                    <img src="folder-open.png" alt="folder" />
                     <p>Projects</p>
                     <button onClick={toggleProjectModal} className='close-modal'>X</button>
                   </div>
