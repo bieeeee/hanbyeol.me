@@ -3,13 +3,13 @@ import ImageSlider from './ImageSlider'
 
 function planforyouSlider() {
   const slides =[
-    {url: "planforyou/1.jpg"},
-    {url: "planforyou/2.jpg"},
-    {url: "planforyou/3.jpg"},
-    {url: "planforyou/4.jpg"},
-    {url: "planforyou/5.jpg"},
-    {url: "planforyou/6.jpg"},
-    {url: "planforyou/7.jpg"}
+    {url: "Planforyou/1.jPg"},
+    {url: "Planforyou/2.jPg"},
+    {url: "Planforyou/3.jPg"},
+    {url: "Planforyou/4.jPg"},
+    {url: "Planforyou/5.jPg"},
+    {url: "Planforyou/6.jPg"},
+    {url: "Planforyou/7.jPg"}
   ];
   const containerStyles = {
     width: '100%',
