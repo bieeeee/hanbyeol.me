@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import "./Modal.css"
-import PlanForYou from './PlanForYou'
 import VarcharForYou from './VarcharForYou'
 import Hanbyeol from './Hanbyeol'
 import Zapfit from './Zapfit'
+import PlanForYou from './PlanForYou'
 
-export default function Project() {
+function Project() {
   const [projectModalOne, setProjectModalOne] = useState(false);
   const [projectModalTwo, setProjectModalTwo] = useState(false);
   const [projectModalThree, setProjectModalThree] = useState(false);
@@ -140,3 +140,5 @@ export default function Project() {
     </>
   )
 }
+
+export default Project;
