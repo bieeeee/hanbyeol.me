@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import "./Modal.css"
-import PlanForYou from './PlanForYou';
-import VarcharForYou from './VarcharForYou';
-import Hanbyeol from './Hanbyeol';
-import Zapfit from './Zapfit';
+import PlanForYou from './PlanForYou'
+import VarcharForYou from './VarcharForYou'
+import Hanbyeol from './Hanbyeol'
+import Zapfit from './Zapfit'
 
 export default function Project() {
   const [projectModalOne, setProjectModalOne] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
 
-function planforyouSlider() {
+function PlanforyouSlider() {
   const slides =[
     {url: "Planforyou/1.jPg"},
     {url: "Planforyou/2.jPg"},
@@ -26,4 +26,4 @@ function planforyouSlider() {
   )
 }
 
-export default planforyouSlider
+export default PlanforyouSlider
