@@ -7,17 +7,17 @@ body .active-modal {
 }
 
 .btn-modal {
-  padding: 10px 20px;
+  padding: 10px;
   display: block;
   margin: 100px auto 0;
-  font-size: 18px;
+  font-size: 12px;
   width: fit-content;
   text-align: center;
 }
 
 .btn-modal h3{
   font-weight: 100;
-  font-size: 19px;
+  /* font-size: 19px; */
 }
 
 .modal, .overlay {
@@ -38,7 +38,7 @@ body .active-modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  line-height: 1.4;
+  /* line-height: 1.4; */
   max-width: 600px;
   min-width: 300px;
   /* width: 80%; */
@@ -56,7 +56,7 @@ body .active-modal {
   position: absolute;
   top: 7px;
   right: 7px;
-  width: 23px;
+  width: 22px;
   height: 20px;
   text-align: center;
   color: black;
@@ -67,6 +67,17 @@ body .active-modal {
   border-bottom: 2px solid #5b5b5b;
   border-left: 2px solid white;
   background-color: #d4d4d4;
+}
+
+.close-modal img {
+  margin-right: 0 !important;
+}
+
+.close-modal:active {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
 }
 
 .modal-bar {
@@ -90,7 +101,7 @@ body .active-modal {
   border: 1px solid black;
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   border-bottom: 2px solid white;
   border-left: 2px solid #5b5b5b;
   border-top: 2px solid #5b5b5b;
@@ -100,12 +111,54 @@ body .active-modal {
   grid-gap: 15px;
 }
 
+.modal-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  text-align: center;
+  justify-items: center;
+}
+
+.modal-content-grid img {
+  height: 20px;
+}
+
 .project-modal-icon {
   margin: 0 auto;
 }
 
-/* .modal-skill {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px;
-} */
+.project-modal-icon p {
+  font-size: 9px !important;
+}
+
+.project-modal-content {
+  height: fit-content;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #5b5b5b;
+  border-top: 2px solid #5b5b5b;
+  border-right: 2px solid white;
+  width: 500px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-modal-content {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    width: 300px;
+  }
+}

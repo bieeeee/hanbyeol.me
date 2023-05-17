@@ -17,7 +17,9 @@ function Terminal() {
           <div className="terminal-bar">
             <img src='prompt.png' alt='folder' />
             <p>About Me</p>
-            <button className='btn-close' onClick={handleClose}>X</button>
+            <button className='btn-close' onClick={handleClose}>
+              <img src="close.png" alt="close" />
+            </button>
           </div>
           <div className="terminal-content">
             <Typewriter

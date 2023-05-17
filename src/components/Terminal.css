@@ -19,7 +19,6 @@
   display: flex;
   align-items: center;
   padding-left: 4px;
-  font-size: 19px;
 }
 
 .terminal-bar img {
@@ -30,18 +29,28 @@
 .btn-close {
   margin-left: auto;
   margin-right: 3px;
-  width: 23px;
+  width: 22px;
   height: 20px;
-  text-align: center;
   color: black;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
   border-top: 2px solid white;
   border-right: 2px solid #5b5b5b;
   border-bottom: 2px solid #5b5b5b;
   border-left: 2px solid white;
   background-color: #d4d4d4;
 }
+
+.btn-close img {
+  height: 16px;
+  padding-right: 0 !important;
+}
+
+.btn-close:active {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+}
+
 
 .terminal-content {
   height: fit-content;
