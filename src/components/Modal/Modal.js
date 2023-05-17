@@ -36,7 +36,9 @@ function Modal() {
                   <div className="modal-bar">
                     <img src="folder-open.png" alt="folder" />
                     <p>Skills</p>
-                    <button onClick={toggleSkillModal} className='close-modal'>X</button>
+                    <button onClick={toggleSkillModal} className='close-modal'>
+                      <img src="close.png" alt="close" />
+                    </button>
                   </div>
                   <div className="modal-content modal-skill">
                     <Skill />
@@ -58,7 +60,9 @@ function Modal() {
                   <div className="modal-bar">
                     <img src="folder-open.png" alt="folder" />
                     <p>Projects</p>
-                    <button onClick={toggleProjectModal} className='close-modal'>X</button>
+                    <button onClick={toggleProjectModal} className='close-modal'>
+                      <img src="close.png" alt="close" />
+                    </button>
                   </div>
                   <div className="modal-content">
                     <Project />

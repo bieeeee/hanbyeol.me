@@ -2,9 +2,14 @@
   width: fit-content;
   text-align: center;
   margin: 0 auto;
+  line-height: 2.2;
 }
 
 .skill-logo img {
   height: 43px;
   margin-bottom: -7px;
+}
+
+.skill-logo p {
+  font-size:9px;
 }

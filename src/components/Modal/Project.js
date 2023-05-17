@@ -38,7 +38,7 @@ export default function Project() {
         onClick={toggleProjectModalOne}
         className='btn-modal project-modal-icon'>
         <img src='folder.png' alt='folder' />
-        <h3>Plan For You</h3>
+        <p>Plan For You</p>
       </div>
 
       {projectModalOne && (
@@ -48,9 +48,11 @@ export default function Project() {
                 <div className="modal-bar">
                   <img src="folder-open.png" alt="folder" />
                   <p>Plan For You</p>
-                  <button onClick={toggleProjectModalOne} className='close-modal'>X</button>
+                  <button onClick={toggleProjectModalOne} className='close-modal'>
+                    <img src="close.png" alt="close" />
+                  </button>
                 </div>
-                <div className="modal-content">
+                <div className="project-modal-content">
                   <PlanForYou />
                 </div>
               </div>
@@ -62,7 +64,7 @@ export default function Project() {
         onClick={toggleProjectModalTwo}
         className='btn-modal project-modal-icon'>
         <img src='folder.png' alt='folder' />
-        <h3>Varchar For you</h3>
+        <p>Varchar For You</p>
       </div>
 
       {projectModalTwo && (
@@ -72,9 +74,11 @@ export default function Project() {
                 <div className="modal-bar">
                   <img src="folder-open.png" alt="folder" />
                   <p>Varchar For You</p>
-                  <button onClick={toggleProjectModalTwo} className='close-modal'>X</button>
+                  <button onClick={toggleProjectModalTwo} className='close-modal'>
+                    <img src="close.png" alt="close" />
+                  </button>
                 </div>
-                <div className="modal-content">
+                <div className="project-modal-content">
                   <VarcharForYou />
                 </div>
               </div>
@@ -86,7 +90,7 @@ export default function Project() {
         onClick={toggleProjectModalThree}
         className='btn-modal project-modal-icon'>
         <img src='folder.png' alt='folder' />
-        <h3>hanbyeol.me</h3>
+        <p>hanbyeol.me</p>
       </div>
 
       {projectModalThree && (
@@ -96,7 +100,9 @@ export default function Project() {
                 <div className="modal-bar">
                   <img src="folder-open.png" alt="folder" />
                   <p>hanbyeol.me</p>
-                  <button onClick={toggleProjectModalThree} className='close-modal'>X</button>
+                  <button onClick={toggleProjectModalThree} className='close-modal'>
+                    <img src="close.png" alt="close" />
+                  </button>
                 </div>
                 <div className="modal-content">
                   <Hanbyeol />
@@ -110,7 +116,7 @@ export default function Project() {
         onClick={toggleProjectModalFour}
         className='btn-modal project-modal-icon'>
         <img src='folder.png' alt='folder' />
-        <h3>zapfit.ca</h3>
+        <p>zapfit.ca</p>
       </div>
 
       {projectModalFour && (
@@ -120,7 +126,9 @@ export default function Project() {
                 <div className="modal-bar">
                   <img src="folder-open.png" alt="folder" />
                   <p>zapfit.ca</p>
-                  <button onClick={toggleProjectModalFour} className='close-modal'>X</button>
+                  <button onClick={toggleProjectModalFour} className='close-modal'>
+                    <img src="close.png" alt="close" />
+                  </button>
                 </div>
                 <div className="modal-content">
                   <Zapfit />
