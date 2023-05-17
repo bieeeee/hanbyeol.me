@@ -152,7 +152,7 @@ body .active-modal {
 
 @media (max-width: 768px) {
   .modal-content {
-    width: fit-content;
+    /* width: fit-content; */
     grid-template-columns: repeat(3, 1fr);
   }
 

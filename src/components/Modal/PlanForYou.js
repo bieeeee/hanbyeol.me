@@ -9,7 +9,10 @@ function PlanForYou() {
         <PlanforyouSlider />
         <div>
           <p>
-            Plan For You is a user-friendly web application that automatically creates seating charts for events based on guests' preferences. The app utilizes the OR-Tools gem to generate optimized seating arrangements based on the preferences.
+          <strong>Plan For You</strong> automatically creates a seating chart by enabling guests to select their preferred seating partners through personalized invitation emails. This ensures a seamless and enjoyable experience for all guests.
+          </p>
+          <p>
+            Technologies: Rails, JS, HTML, SCSS, PostgreSQL, Bootstrap
           </p>
         </div>
         <div className='modal-content-grid' style={{ border: 'none' }}>
@@ -18,7 +21,7 @@ function PlanForYou() {
             <p>Link</p>
           </a>
         </div>
-        <div className='modal-content-grid' style={{ border: 'none' }}>
+        {/* <div className='modal-content-grid' style={{ border: 'none' }}>
           <div className='skill-logo'>
             <img src="rails.png" alt="rails" />
             <p>Rails</p>
@@ -39,7 +42,7 @@ function PlanForYou() {
             <img src="postgresql.png" alt="postgresql" />
             <p>PostgreSQL</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

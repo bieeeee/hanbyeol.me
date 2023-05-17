@@ -15,11 +15,11 @@ function Modal() {
   }
 
   // For hiding scroll purpose
-  // if(skillModal) {
-  //   document.body.classList.add('active-modal')
-  // } else {
-  //   document.body.classList.remove('active-modal')
-  // }
+  if(skillModal) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
 
   return (
     <>

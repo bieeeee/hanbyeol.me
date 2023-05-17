@@ -17,9 +17,9 @@ const ImageSlider = ({ slides }) => {
     position: 'absolute',
     top: '50%',
     transform: 'translate(0, -50%)',
-    left: '10px',
+    left: '6px',
     fontSize: '30px',
-    color: 'orange',
+    color: 'gray',
     zIndex: 1,
     cursor: 'pointer'
   }
@@ -27,9 +27,9 @@ const ImageSlider = ({ slides }) => {
     position: 'absolute',
     top: '50%',
     transform: 'translate(0, -50%)',
-    right: '10px',
+    right: '6px',
     fontSize: '30px',
-    color: 'orange',
+    color: 'gray',
     zIndex: 1,
     cursor: 'pointer'
   }

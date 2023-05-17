@@ -1,5 +1,6 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
+import './Slider.css'
 
 function PlanforyouSlider() {
   const slides =[
@@ -9,7 +10,7 @@ function PlanforyouSlider() {
     {url: "Planforyou/4.jpg"},
     {url: "Planforyou/5.jpg"},
     {url: "Planforyou/6.jpg"},
-    {url: "Planforyou/7.jpg"}
+    {url: "Planforyou/7.jpg"},
   ];
   const containerStyles = {
     width: '100%',
@@ -20,7 +21,7 @@ function PlanforyouSlider() {
   };
 
   return (
-    <div style={containerStyles}>
+    <div className='slider-container' style={containerStyles}>
       <ImageSlider slides={slides} />
     </div>
   )

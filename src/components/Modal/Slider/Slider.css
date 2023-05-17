@@ -1,3 +1,15 @@
-Slider img {
-  width: 200px;
+
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: 150px !important;
+    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+  }
 }
+
+/* '@media (max-width: 480px)': {
+  height: '100px',
+  marginBottom: '5px',
+  marginTop: '2px',
+}, */
