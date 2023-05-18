@@ -4,13 +4,13 @@ import './Slider.css'
 
 function PlanforSlider() {
   const slides =[
-    {url: "Planforyou/1.jpg"},
-    {url: "Planforyou/2.jpg"},
-    {url: "Planforyou/3.jpg"},
-    {url: "Planforyou/4.jpg"},
-    {url: "Planforyou/5.jpg"},
-    {url: "Planforyou/6.jpg"},
-    {url: "Planforyou/7.jpg"},
+    {url: "Planfor/1.jpg"},
+    {url: "Planfor/2.jpg"},
+    {url: "Planfor/3.jpg"},
+    {url: "Planfor/4.jpg"},
+    {url: "Planfor/5.jpg"},
+    {url: "Planfor/6.jpg"},
+    {url: "Planfor/7.jpg"},
   ];
   const containerStyles = {
     width: '100%',
