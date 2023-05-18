@@ -71,6 +71,16 @@ function Modal() {
               </div>
           </div>)
         }
+
+        <a href="resume.pdf" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
+          <img src="notepad.png" alt="resume" style={{width: '48px'}} />
+          <p>Resume</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/hanbyeol-kwon/" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
+          <img src="linkedin.png" alt="linkedin" style={{width: '48px'}} />
+          <p>LinkedIn</p>
+        </a>
       </div>
     </>
   );

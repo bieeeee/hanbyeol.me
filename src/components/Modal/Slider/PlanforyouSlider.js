@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import ImageSlider from './ImageSlider'
 import './Slider.css'
 
@@ -27,4 +27,4 @@ function PlanforyouSlider() {
   )
 }
 
-export default PlanforyouSlider;
+export default PlanforyouSlider

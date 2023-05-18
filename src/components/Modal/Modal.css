@@ -1,5 +1,10 @@
 .folders {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90vw;
 }
 
 body .active-modal {
@@ -9,7 +14,7 @@ body .active-modal {
 .btn-modal {
   padding: 10px;
   display: block;
-  margin: 100px auto 0;
+  margin: 30px auto 0;
   font-size: 12px;
   width: fit-content;
   text-align: center;
@@ -151,6 +156,11 @@ body .active-modal {
 }
 
 @media (max-width: 768px) {
+  .folders {
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+  }
+
   .modal-content {
     /* width: fit-content; */
     grid-template-columns: repeat(3, 1fr);
