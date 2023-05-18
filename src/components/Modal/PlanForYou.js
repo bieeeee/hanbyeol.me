@@ -1,6 +1,6 @@
 import React from 'react'
 import './Modal.css'
-import PlanforyouSlider from "./Slider/planforyouSlider.1"
+import PlanforyouSlider from "./Slider/PlanforyouSlider"
 
 function PlanForYou() {
   return (
