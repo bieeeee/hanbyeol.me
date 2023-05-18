@@ -1,12 +1,12 @@
 import React from 'react'
 import './Modal.css'
-import PlanforyouSlider from "./Slider/PlanforyouSlider"
+import PlanforSlider from "./Slider/PlanforSlider"
 
 function PlanForYou() {
   return (
     <>
       <div className='project-content'>
-        <PlanforyouSlider />
+        <PlanforSlider />
         <div style={{marginLeft: '5px', marginBottom: '13px'}}>
           <p>
           The app automatically creates a seating chart by enabling guests to select their preferred seating partners through personalized invitation emails. This ensures a seamless and enjoyable experience for all guests.
