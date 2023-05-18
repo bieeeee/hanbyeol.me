@@ -18,7 +18,7 @@ const ImageSlider = ({ slides }) => {
     top: '50%',
     transform: 'translate(0, -50%)',
     left: '6px',
-    fontSize: '30px',
+    fontSize: '23px',
     color: 'gray',
     zIndex: 1,
     cursor: 'pointer'
@@ -47,8 +47,8 @@ const ImageSlider = ({ slides }) => {
   }
   return(
     <div style={sliderStyles}>
-      <div style={leftArrowStyles} onClick={goToPrevious}>❰</div>
-      <div style={rightArrowStyles} onClick={goToNext}>❱</div>
+      <div style={leftArrowStyles} onClick={goToPrevious}>〈</div>
+      <div style={rightArrowStyles} onClick={goToNext}>〉</div>
       <div style={slideStyles}>
       </div>
     </div>

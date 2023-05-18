@@ -14,7 +14,7 @@ function PlanforyouSlider() {
   ];
   const containerStyles = {
     width: '100%',
-    height: '200px',
+    height: '270px',
     margin: '0 auto',
     marginBottom: '20px',
     marginTop: '10px'
