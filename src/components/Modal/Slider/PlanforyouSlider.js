@@ -27,4 +27,4 @@ function PlanforyouSlider() {
   )
 }
 
-export default PlanforyouSlider
+export default PlanforyouSlider;
