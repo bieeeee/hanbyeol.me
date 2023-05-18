@@ -8,7 +8,9 @@
 }
 
 body {
-  background-image: linear-gradient(80deg, rgb(120,212,207), rgb(146,179,208));
+  /* background-image: linear-gradient(80deg, rgb(120,212,207), rgb(146,179,208)); */
+  background-image: url('../public/44_8.jpg');
+  background-size: cover;
   margin: 0;
   padding: 0;
   height: 100vh;

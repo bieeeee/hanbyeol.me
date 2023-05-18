@@ -5,6 +5,7 @@ import './Slider.css'
 function VarcharSlider() {
   const slides =[
     {url: "Varchar/1.jpg"},
+    {url: "Varchar/2.jpg"},
   ];
   const containerStyles = {
     width: '100%',

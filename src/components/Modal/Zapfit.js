@@ -9,7 +9,7 @@ function Zapfit() {
         <ZapfitSlider />
         <div style={{marginLeft: '5px', marginBottom: '13px'}}>
           <p>
-          The app automatically creates a seating chart by enabling guests to select their preferred seating partners through personalized invitation emails. This ensures a seamless and enjoyable experience for all guests.
+            A personal training business website that enables clients to easily discover and schedule trial sessions.
           </p>
           <p style={{fontSize: '10px', fontStyle: 'italic', marginTop: '5px'}}>
             Technologies: Ruby on Rails, JS, HTML, SCSS, PostgreSQL, Bootstrap
