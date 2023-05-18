@@ -104,7 +104,7 @@ function Project() {
                     <img src="close.png" alt="close" />
                   </button>
                 </div>
-                <div className="modal-content">
+                <div className="project-modal-content">
                   <Hanbyeol />
                 </div>
               </div>
@@ -130,7 +130,7 @@ function Project() {
                     <img src="close.png" alt="close" />
                   </button>
                 </div>
-                <div className="modal-content">
+                <div className="project-modal-content">
                   <Zapfit />
                 </div>
               </div>
