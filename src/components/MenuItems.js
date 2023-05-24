@@ -5,18 +5,18 @@ export const MenuItems = [
     cName: 'dropdown-link'
   },
   {
-    title: 'Resume',
-    path: '/resume',
-    cName: 'dropdown-link'
-  },
-  {
     title: 'Contact',
     path: '/contact',
     cName: 'dropdown-link'
   },
   {
-    title: 'Others',
-    path: '/others',
+    title: 'Weather',
+    path: '/weather',
+    cName: 'dropdown-link'
+  },
+  {
+    title: 'Photography',
+    path: '/photography',
     cName: 'dropdown-link'
   }
 ];
