@@ -32,6 +32,14 @@ function Skill() {
         <img src="postgresql.png" alt="postgresql" />
         <p>PostgreSQL</p>
       </div>
+      <div className='skill-logo'>
+        <img src="bootstrap.png" alt="bootstrap" />
+        <p>Bootstrap</p>
+      </div>
+      <div className='skill-logo'>
+        <img src="git.png" alt="git" />
+        <p>Git</p>
+      </div>
     </>
   )
 }

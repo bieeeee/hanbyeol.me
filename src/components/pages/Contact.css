@@ -50,6 +50,7 @@
   height: 30px;
   width: 110px;
   align-self: right;
+  margin-left: 81px;
 }
 
 @media (max-width: 768px) {
