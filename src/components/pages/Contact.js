@@ -29,7 +29,7 @@ export const Contact = () => {
           </button>
         </div>
       <div className='contact-content'>
-        <img src="email.png" alt="email" style={{padding: '20px', margin: '0 auto'}} />
+        <img src="email.png" alt="email" style={{padding: '23px', margin: '0 auto', width: '102px'}} />
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
           {/* <div className="contact-form-content">
             <p>Let's get in touch!<br />I'd love to work on stupid and fun projects!</p>

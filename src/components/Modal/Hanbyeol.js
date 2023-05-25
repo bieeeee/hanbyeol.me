@@ -9,7 +9,7 @@ function Hanbyeol() {
         <HanbyeolSlider />
         <div style={{marginLeft: '5px', marginBottom: '13px'}}>
           <p>
-            Personal website
+          My personal website inspired by the nostalgia of the good ol' days
           </p>
           <p style={{fontSize: '10px', fontStyle: 'italic', marginTop: '5px'}}>
             Technologies: React.js, CSS
