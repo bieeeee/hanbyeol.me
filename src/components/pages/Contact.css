@@ -2,6 +2,7 @@
   margin-top: 50px;
   width: 50vw;
   /* height: 40vh; */
+  margin-top: 100px !important;
   margin: 0 auto;
   background-color: #d4d4d4;
   border-top: 2px solid white;
@@ -12,11 +13,16 @@
 
 .contact-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 20px;
 }
 
 .contact-form {
-  margin: 0 auto;
+  margin-top: 25px !important;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center
   /* width: 50vw; */
   /* display: table-column; */
 }
@@ -37,10 +43,10 @@
 }
 
 .btn-send {
-  border-top: 2px solid white;
-  border-right: 2px solid #5b5b5b;
-  border-bottom: 2px solid #5b5b5b;
-  border-left: 2px solid white;
+  border-top: 2px solid white !important;
+  border-right: 2px solid #5b5b5b !important;
+  border-bottom: 2px solid #5b5b5b !important;
+  border-left: 2px solid white !important;
   height: 30px;
   width: 110px;
   align-self: right;

@@ -29,11 +29,11 @@ export const Contact = () => {
           </button>
         </div>
       <div className='contact-content'>
-        <img src="email.png" alt="email" style={{padding: '20px'}} />
+        <img src="email.png" alt="email" style={{padding: '20px', margin: '0 auto'}} />
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
-          <div className="contact-form-content">
+          {/* <div className="contact-form-content">
             <p>Let's get in touch!<br />I'd love to work on stupid and fun projects!</p>
-          </div>
+          </div> */}
           <div className='contact-form-content'>
             <p style={{whiteSpace: 'nowrap', marginRight: '10px', width: '80px'}}>User name:</p>
             <input type="text" name="user_name" />
@@ -46,8 +46,8 @@ export const Contact = () => {
             <p style={{whiteSpace: 'nowrap', marginRight: '10px', width: '80px'}}>Message:</p>
             <textarea name="message" />
           </div>
-        </form>
           <input type="submit" value="Send" className='btn-send' />
+        </form>
       </div>
     </div>
   );
