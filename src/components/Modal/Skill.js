@@ -5,12 +5,16 @@ function Skill() {
   return (
     <>
       <div className='skill-logo'>
-        <img src="rails.png" alt="rails" />
-        <p>Rails</p>
+        <img src="node.png" alt="node" />
+        <p>Node.js</p>
       </div>
       <div className='skill-logo'>
         <img src="react.png" alt="react" />
-        <p>React.js</p>
+        <p>React</p>
+      </div>
+      <div className='skill-logo' style={{ whiteSpace: "nowrap" }}>
+        <img src="rails.png" alt="rails" />
+        <p>Ruby On Rails</p>
       </div>
       <div className='skill-logo'>
         <img src="javascript.png" alt="js" />
@@ -26,11 +30,23 @@ function Skill() {
       </div>
       <div className='skill-logo'>
         <img src="scss.png" alt="scss" />
-        <p>Scss</p>
+        <p>Sass</p>
       </div>
       <div className='skill-logo'>
         <img src="postgresql.png" alt="postgresql" />
         <p>PostgreSQL</p>
+      </div>
+      <div className='skill-logo'>
+        <img src="mongodb.png" alt="mongodb" />
+        <p>MongoDB</p>
+      </div>
+      <div className='skill-logo'>
+        <img src="insomnia.svg" alt="insomnia" />
+        <p>Insomnia</p>
+      </div>
+      <div className='skill-logo'>
+        <img src="tailwind.png" alt="tailwind" style={{ padding: "5px" }} />
+        <p>Tailwind</p>
       </div>
       <div className='skill-logo'>
         <img src="bootstrap.png" alt="bootstrap" />
