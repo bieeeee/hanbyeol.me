@@ -81,6 +81,11 @@ function Modal() {
           <img src="linkedin.png" alt="linkedin" style={{width: '48px'}} />
           <p>LinkedIn</p>
         </a>
+
+        <a href="https://github.com/bieeeee" target='_blank' rel="noreferrer noopener" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
+          <img src="github.png" alt="github" style={{width: '48px'}} />
+          <p>Github</p>
+        </a>
       </div>
     </>
   );
