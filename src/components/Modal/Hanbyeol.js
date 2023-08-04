@@ -12,7 +12,7 @@ function Hanbyeol() {
           My personal website inspired by the nostalgia of the good ol' days
           </p>
           <p style={{fontSize: '10px', fontStyle: 'italic', marginTop: '5px'}}>
-            Technologies: React.js, CSS
+            Technologies: React, CSS
           </p>
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>

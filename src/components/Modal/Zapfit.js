@@ -12,7 +12,7 @@ function Zapfit() {
             A personal training business website that enables clients to easily discover and schedule trial sessions.
           </p>
           <p style={{fontSize: '10px', fontStyle: 'italic', marginTop: '5px'}}>
-            Technologies: Ruby on Rails, JS, HTML, SCSS, PostgreSQL, Bootstrap
+            Technologies: Ruby on Rails, Javascript, HTML, SCSS, PostgreSQL, Bootstrap
           </p>
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>

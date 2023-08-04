@@ -12,7 +12,7 @@ function VarcharForYou() {
           Varchar for you is a character rental service web application that connects clients with a diverse catalog of characters for their events. From birthday parties to corporate functions, clients can easily browse, book, and bring a touch of magic to their occasions with a seamless and personalized experience.
           </p>
           <p style={{fontSize: '10px', fontStyle: 'italic', marginTop: '5px'}}>
-            Technologies: Ruby on Rails, JS, HTML, SCSS, PostgreSQL, Bootstrap
+            Technologies: Ruby on Rails, Javascript, HTML, SCSS, PostgreSQL, Bootstrap
           </p>
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>

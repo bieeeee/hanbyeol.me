@@ -12,7 +12,7 @@ function PlanForYou() {
             The app automatically creates a seating chart by enabling guests to select their preferred seating partners through personalized invitation emails. This ensures a seamless and enjoyable experience for all guests.
           </p>
           <p style={{fontSize: '10px', fontStyle: 'italic', marginTop: '5px'}}>
-            Technologies: Ruby on Rails, JS, HTML, SCSS, PostgreSQL, Bootstrap
+            Technologies: Ruby on Rails, Javascript, HTML, SCSS, PostgreSQL, Bootstrap
           </p>
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>
