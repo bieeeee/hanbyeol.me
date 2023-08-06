@@ -11,9 +11,10 @@ function Hanbyeol() {
           <p>
           My personal website inspired by the nostalgia of the good ol' days
           </p>
-          <p style={{fontSize: '10px', fontStyle: 'italic', marginTop: '5px'}}>
-            Technologies: React, CSS
-          </p>
+          <div className='project-tag-container'>
+            <p className='project-tag'>React</p>
+            <p className='project-tag'>CSS</p>
+          </div>
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>
           <a href='https://github.com/bieeeee/hanbyeol.me' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
