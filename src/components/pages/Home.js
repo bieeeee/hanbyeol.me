@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import '../../App.css';
 import Modal from '../Modal/Modal';
-import Terminal from '../Terminal';
+
+const Terminal = lazy(() => import('../Terminal'));
 
 function Home() {
   return (
     <>
-      <Terminal />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Terminal />
+      </Suspense>
       <Modal />
     </>
   );
