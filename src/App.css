@@ -22,8 +22,13 @@ body {
   /* position: relative; */
   /* z-index: 1; */
 }
-/*
+
 @font-face {
-  font-family: 'px_sans_nouveaux';
-  src: url('../public/px_sans_nouveaux.ttf') format('truetype');
-} */
+  font-family: "px sans nouveaux";
+  src: url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.eot");
+  src: url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.svg#px sans nouveaux")format("svg");
+}
