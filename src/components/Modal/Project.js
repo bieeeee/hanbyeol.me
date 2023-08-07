@@ -5,6 +5,7 @@ import Hanbyeol from './Hanbyeol'
 import Zapfit from './Zapfit'
 import PlanForYou from './PlanForYou'
 import Onlydevs from './Onlydevs'
+import Booking from './Booking'
 
 function Project() {
   const [projectModalOne, setProjectModalOne] = useState(false);
@@ -12,6 +13,8 @@ function Project() {
   const [projectModalThree, setProjectModalThree] = useState(false);
   const [projectModalFour, setProjectModalFour] = useState(false);
   const [projectModalFive, setProjectModalFive] = useState(false);
+  const [projectModalSix, setProjectModalSix] = useState(false);
+
 
 
 
@@ -38,6 +41,11 @@ function Project() {
   const toggleProjectModalFive = (e) => {
     e.stopPropagation();
     setProjectModalFive(!projectModalFive);
+  }
+
+  const toggleProjectModalSix = (e) => {
+    e.stopPropagation();
+    setProjectModalSix(!projectModalSix);
   }
 
   return (
@@ -166,6 +174,32 @@ function Project() {
               </div>
               <div className="project-modal-content">
                 <Onlydevs />
+              </div>
+            </div>
+          </div>
+        </div>)
+      }
+
+      <div
+        onClick={toggleProjectModalSix}
+        className='btn-modal project-modal-icon'>
+        <img src='folder.png' alt='folder' />
+        <p>Booking.com</p>
+      </div>
+
+      {projectModalSix && (
+        <div className='modal'>
+          <div onClick={toggleProjectModalSix}>
+            <div className='modal-container'>
+              <div className="modal-bar">
+                <img src="folder-open.png" alt="folder" />
+                <p>Booking.com</p>
+                <button onClick={toggleProjectModalSix} className='close-modal'>
+                  <img src="close.png" alt="close" />
+                </button>
+              </div>
+              <div className="project-modal-content">
+                <Booking />
               </div>
             </div>
           </div>
