@@ -1,15 +1,15 @@
 import React from 'react'
 import './Modal.css'
-import ZapfitSlider from './Slider/ZapfitSlider'
+import OnlydevsSlider from './Slider/OnlydevsSlider'
 
 function Onlydevs() {
   return (
     <>
       <div className='project-content'>
-        {/* <ZapfitSlider /> */}
+        <OnlydevsSlider />
         <div style={{ marginLeft: '5px', marginBottom: '13px' }}>
           <p>
-            OnlyDevs is a platform to connect junior/senior developers for career guidance. Similar to a dating app, our app provides filters for users to select developers nearby, preferred work experience and discipline. They can view a profile and leave questions for interaction.
+            OnlyDevs is a platform to connect junior/senior developers for career guidance. The app provides filters for users to find developers nearby, preferred work experience and discipline. They can view a profile and leave questions for interaction.
           </p>
           <div className='project-tag-container'>
             <p className='project-tag'>Ruby On Rails</p>
