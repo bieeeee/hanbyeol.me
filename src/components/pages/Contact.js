@@ -35,11 +35,11 @@ export const Contact = () => {
             <p>Let's get in touch!<br />I'd love to work on stupid and fun projects!</p>
           </div> */}
           <div className='contact-form-content'>
-            <p style={{whiteSpace: 'nowrap', marginRight: '10px', width: '80px'}}>User name:</p>
+            <p style={{whiteSpace: 'nowrap', marginRight: '10px', width: '80px'}}>Your name:</p>
             <input type="text" name="user_name" />
           </div>
           <div className='contact-form-content'>
-            <p style={{whiteSpace: 'nowrap', marginRight: '10px', width: '80px'}}>User email:</p>
+            <p style={{whiteSpace: 'nowrap', marginRight: '10px', width: '80px'}}>Your email:</p>
             <input type="email" name="user_email" />
           </div>
           <div className='contact-form-content'>
