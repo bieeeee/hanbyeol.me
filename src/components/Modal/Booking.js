@@ -6,7 +6,7 @@ function Booking() {
   return (
     <>
       <div className='project-content'>
-        {/* <BookingSlider /> */}
+        <BookingSlider />
         <div style={{ marginLeft: '5px', marginBottom: '13px' }}>
           <p>
             A full-stack booking.com clone.
