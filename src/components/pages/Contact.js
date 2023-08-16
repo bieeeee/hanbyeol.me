@@ -5,11 +5,14 @@ import '../Terminal.css';
 
 export const Contact = () => {
   const form = useRef();
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_bsqlm1p', 'template_ynbqhv8', form.current, 'BtpcX1uasUR6GhQXa')
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
