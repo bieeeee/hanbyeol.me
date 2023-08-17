@@ -86,6 +86,10 @@ function Modal() {
           <img src="github.png" alt="github" style={{width: '48px'}} />
           <p>Github</p>
         </a>
+        <a href="/contact" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
+          <img src="email.png" alt="contact" style={{width: '48px'}} />
+          <p>Contact</p>
+        </a>
       </div>
     </>
   );
