@@ -20,10 +20,6 @@ function Zapfit() {
           </div>
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>
-          <a href='https://www.zapfit.ca/' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
-            <img src="internet.png" alt="link" />
-            <p>Site.html</p>
-          </a>
         </div>
       </div>
     </>
