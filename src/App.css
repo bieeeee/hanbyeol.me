@@ -8,8 +8,7 @@
 }
 
 body {
-  /* background-image: linear-gradient(80deg, rgb(120,212,207), rgb(146,179,208)); */
-  background-image: url('../public/44_8.jpg');
+  background-image: url('../public/assets/bg.jpg');
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -19,8 +18,6 @@ body {
 .background-image {
   overflow: auto;
   height: 100vh;
-  /* position: relative; */
-  /* z-index: 1; */
 }
 
 @font-face {
@@ -32,3 +29,11 @@ body {
   url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.ttf")format("truetype"),
   url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.svg#px sans nouveaux")format("svg");
 }
+
+/* @font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+AC00, U+D7AF;
+} */

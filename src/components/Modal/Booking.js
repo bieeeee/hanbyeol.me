@@ -21,7 +21,7 @@ function Booking() {
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>
           <a href='https://github.com/bieeeee/booking-app' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{ textDecoration: 'none' }}>
-            <img src="github.png" alt="repo" />
+            <img src="assets/icons/github.png" alt="repo" />
             <p>Source</p>
           </a>
         </div>

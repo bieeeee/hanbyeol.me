@@ -4,10 +4,10 @@ import './Slider.css'
 
 function ZapfitSlider() {
   const slides =[
-    {url: "Zapfit/1.jpg"},
-    {url: "Zapfit/2.jpg"},
-    {url: "Zapfit/3.jpg"},
-    {url: "Zapfit/4.jpg"},
+    {url: "assets/projects/Zapfit/1.jpg"},
+    {url: "assets/projects/Zapfit/2.jpg"},
+    {url: "assets/projects/Zapfit/3.jpg"},
+    {url: "assets/projects/Zapfit/4.jpg"},
   ];
   const containerStyles = {
     width: '100%',

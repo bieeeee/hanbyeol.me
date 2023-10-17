@@ -25,7 +25,7 @@ function Modal() {
     <>
       <div className='folders'>
         <div onClick={toggleSkillModal} className='btn-modal'>
-          <img src='folder.png' alt='folder' />
+          <img src='assets/icons/folder.png' alt='folder' />
           <h3>Skills</h3>
         </div>
 
@@ -34,10 +34,10 @@ function Modal() {
               <div onClick={toggleSkillModal} className='overlay'>
                 <div className='modal-container'>
                   <div className="modal-bar">
-                    <img src="folder-open.png" alt="folder" />
+                    <img src="assets/icons/folder-open.png" alt="folder" />
                     <p>Skills</p>
                     <button onClick={toggleSkillModal} className='close-modal'>
-                      <img src="close.png" alt="close" />
+                      <img src="assets/icons/close.png" alt="close" />
                     </button>
                   </div>
                   <div className="modal-content modal-skill">
@@ -49,7 +49,7 @@ function Modal() {
         }
 
         <div onClick={toggleProjectModal} className='btn-modal'>
-          <img src='folder.png' alt='folder' />
+          <img src='assets/icons/folder.png' alt='folder' />
           <h3>Projects</h3>
         </div>
 
@@ -58,10 +58,10 @@ function Modal() {
               <div onClick={toggleProjectModal} className='overlay'>
                 <div className='modal-container'>
                   <div className="modal-bar">
-                    <img src="folder-open.png" alt="folder" />
+                    <img src="assets/icons/folder-open.png" alt="folder" />
                     <p>Projects</p>
                     <button onClick={toggleProjectModal} className='close-modal'>
-                      <img src="close.png" alt="close" />
+                      <img src="assets/icons/close.png" alt="close" />
                     </button>
                   </div>
                   <div className="modal-content">
@@ -72,22 +72,22 @@ function Modal() {
           </div>)
         }
 
-        <a href="resume.pdf" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
-          <img src="notepad.png" alt="resume" style={{width: '48px'}} />
+        <a href="assets/resume.pdf" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
+          <img src="assets/icons/notepad.png" alt="resume" style={{width: '48px'}} />
           <p>Resume</p>
         </a>
 
         <a href="https://www.linkedin.com/in/hanbyeol-kwon/" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
-          <img src="linkedin.png" alt="linkedin" style={{width: '48px'}} />
+          <img src="assets/icons/linkedin.png" alt="linkedin" style={{width: '48px'}} />
           <p>LinkedIn</p>
         </a>
 
         <a href="https://github.com/bieeeee" target='_blank' rel="noreferrer noopener" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
-          <img src="github.png" alt="github" style={{width: '48px'}} />
+          <img src="assets/icons/github.png" alt="github" style={{width: '48px'}} />
           <p>Github</p>
         </a>
         <a href="/contact" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
-          <img src="email.png" alt="contact" style={{width: '48px'}} />
+          <img src="assets/icons/email.png" alt="contact" style={{width: '48px'}} />
           <p>Contact</p>
         </a>
       </div>

@@ -4,9 +4,9 @@ import './Slider.css'
 
 function OnlydevsSlider() {
   const slides =[
-    {url: "Onlydevs/1.jpg"},
-    {url: "Onlydevs/2.jpg"},
-    {url: "Onlydevs/3.jpg"},
+    {url: "assets/projects/Onlydevs/1.jpg"},
+    {url: "assets/projects/Onlydevs/2.jpg"},
+    {url: "assets/projects/Onlydevs/3.jpg"},
   ];
   const containerStyles = {
     width: '100%',
