@@ -1,8 +1,9 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import { lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
+const Navbar = lazy(() => import('./components/Navbar'));
+const Home = lazy(() => import('./components/pages/Home'));
+const Contact = lazy(() => import('./components/pages/Contact'));
 
 function App() {
   return (

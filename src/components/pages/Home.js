@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import '../../App.css';
-import Modal from '../Modal/Modal';
-
 const Terminal = lazy(() => import('../Terminal'));
+const Modal = lazy(() => import('../Modal/Modal'));
+
 
 function Home() {
   return (
