@@ -20,7 +20,7 @@
   color: black;
 }
 
-.dropdown-menu li:hover {
+.-menu li:hover {
   background: #000184;
   color: white;
   cursor: pointer;

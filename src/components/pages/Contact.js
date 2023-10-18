@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
-import '../Terminal.css';
+import '../Terminal/Terminal.css';
 
 export const Contact = () => {
   const form = useRef();

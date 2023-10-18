@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from './Dropdown';
+import Dropdown from '../Dropdown/Dropdown';
 import './Navbar.css';
-import Time from './Time';
-import '../i18n';
+import Time from '../Time/Time.js';
+import '../../i18n';
 import { useTranslation } from 'react-i18next';
 
 function Navbar() {

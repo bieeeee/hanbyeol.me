@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import '../../App.css';
-const Terminal = lazy(() => import('../Terminal'));
+const Terminal = lazy(() => import('../Terminal/Terminal'));
 const Modal = lazy(() => import('../Modal/Modal'));
 
 

@@ -1,7 +1,7 @@
 import './App.css';
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-const Navbar = lazy(() => import('./components/Navbar'));
+const Navbar = lazy(() => import('./components/Navbar/Navbar'));
 const Home = lazy(() => import('./components/pages/Home'));
 const Contact = lazy(() => import('./components/pages/Contact'));
 
