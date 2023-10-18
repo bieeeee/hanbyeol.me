@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import '../../App.css';
-const Terminal = lazy(() => import('../Terminal/Terminal'));
 const Modal = lazy(() => import('../Modal/Modal'));
+const Terminal = lazy(() => import('../Terminal/Terminal'));
 
 
 function Home() {
@@ -10,7 +10,9 @@ function Home() {
       <Suspense fallback={<div>Loading...</div>}>
         <Terminal />
       </Suspense>
-      <Modal />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Modal />
+      </Suspense>
     </>
   );
 }
