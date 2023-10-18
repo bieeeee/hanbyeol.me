@@ -22,37 +22,37 @@ function PlanForYou() {
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>
           <a href='https://planforyou.herokuapp.com' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
-            <img src="assets/icons/internet.png" alt="link" />
+            <img src="assets/icons/internet.png?as=webp" alt="link" />
             <p>Site.html</p>
           </a>
           <a href='https://youtu.be/3jZFHTANuRQ?t=1766' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
-            <img src="assets/icons/video.png" alt="video" />
+            <img src="assets/icons/video.png?as=webp" alt="video" />
             <p>Demo.mp4</p>
           </a>
           <a href='https://github.com/bieeeee/PLAN4U' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
-            <img src="assets/icons/github.png" alt="repo" />
+            <img src="assets/icons/github.png?as=webp" alt="repo" />
             <p>Source</p>
           </a>
         </div>
         {/* <div className='modal-content-grid' style={{ border: 'none' }}>
           <div className='skill-logo'>
-            <img rails.png" alt="rails" />
+            <img rails.png?as=webp" alt="rails" />
             <p>Rails</p>
           </div>
           <div className='skill-logo'>
-            <img src="javascript.png" alt="js" />
+            <img src="javascript.png?as=webp" alt="js" />
             <p>Javascript</p>
           </div>
           <div className='skill-logo'>
-            <img src="html.png" alt="html" />
+            <img src="html.png?as=webp" alt="html" />
             <p>Html</p>
           </div>
           <div className='skill-logo'>
-            <img src="scss.png" alt="scss" />
+            <img src="scss.png?as=webp" alt="scss" />
             <p>Scss</p>
           </div>
           <div className='skill-logo'>
-            <img src="postgresql.png" alt="postgresql" />
+            <img src="postgresql.png?as=webp" alt="postgresql" />
             <p>PostgreSQL</p>
           </div>
         </div> */}

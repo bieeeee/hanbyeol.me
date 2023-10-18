@@ -4,8 +4,8 @@ import './Slider.css'
 
 function VarcharSlider() {
   const slides =[
-    {url: "assets/projects/Varchar/1.jpg"},
-    {url: "assets/projects/Varchar/2.jpg"},
+    {url: "assets/projects/Varchar/1.jpg?as=webp"},
+    {url: "assets/projects/Varchar/2.jpg?as=webp"},
   ];
   const containerStyles = {
     width: '100%',

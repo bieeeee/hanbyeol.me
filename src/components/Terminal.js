@@ -14,10 +14,10 @@ function Terminal() {
       {!isClosed && (
         <div className='terminal-container'>
           <div className="terminal-bar">
-            <img src='assets/icons/prompt.png' alt='folder' />
+            <img src='assets/icons/prompt.png?as=webp' alt='folder' />
             <p>About Me</p>
             <button className='btn-close' onClick={handleClose}>
-              <img src="assets/icons/close.png" alt="close" />
+              <img src="assets/icons/close.png?as=webp" alt="close" />
             </button>
           </div>
           <div className="terminal-content">

@@ -25,14 +25,14 @@ export const Contact = () => {
   return (
     <div className='container-contact'>
         <div className="terminal-bar">
-          <img src='assets/icons/prompt.png' alt='folder' />
+          <img src='assets/icons/prompt.png?as=webp' alt='folder' />
           <p>Contact me</p>
           <button className='btn-close'>
-            <img src="assets/icons/close.png" alt="close" />
+            <img src="assets/icons/close.png?as=webp" alt="close" />
           </button>
         </div>
       <div className='contact-content'>
-        <img src="assets/icons/email.png" alt="email" style={{padding: '23px', margin: '0 auto', width: '102px'}} />
+        <img src="assets/icons/email.png?as=webp" alt="email" style={{padding: '23px', margin: '0 auto', width: '102px'}} />
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
           {/* <div className="contact-form-content">
             <p>Let's get in touch!<br />I'd love to work on stupid and fun projects!</p>

@@ -53,7 +53,7 @@ function Project() {
       <div
         onClick={toggleProjectModalOne}
         className='btn-modal project-modal-icon'>
-        <img src='assets/icons/folder.png' alt='folder' />
+        <img src='assets/icons/folder.png?as=webp' alt='folder' />
         <p>Plan For You</p>
       </div>
 
@@ -62,10 +62,10 @@ function Project() {
           <div onClick={toggleProjectModalOne}>
             <div className='modal-container'>
               <div className="modal-bar">
-                <img src="assets/icons/folder-open.png" alt="folder" />
+                <img src="assets/icons/folder-open.png?as=webp" alt="folder" />
                 <p>Plan For You</p>
                 <button onClick={toggleProjectModalOne} className='close-modal'>
-                  <img src="assets/icons/close.png" alt="close" />
+                  <img src="assets/icons/close.png?as=webp" alt="close" />
                 </button>
               </div>
               <div className="project-modal-content">
@@ -79,7 +79,7 @@ function Project() {
       <div
         onClick={toggleProjectModalTwo}
         className='btn-modal project-modal-icon'>
-        <img src='assets/icons/folder.png' alt='folder' />
+        <img src='assets/icons/folder.png?as=webp' alt='folder' />
         <p>Varchar For You</p>
       </div>
 
@@ -88,10 +88,10 @@ function Project() {
           <div onClick={toggleProjectModalTwo}>
             <div className='modal-container'>
               <div className="modal-bar">
-                <img src="assets/icons/folder-open.png" alt="folder" />
+                <img src="assets/icons/folder-open.png?as=webp" alt="folder" />
                 <p>Varchar For You</p>
                 <button onClick={toggleProjectModalTwo} className='close-modal'>
-                  <img src="assets/icons/close.png" alt="close" />
+                  <img src="assets/icons/close.png?as=webp" alt="close" />
                 </button>
               </div>
               <div className="project-modal-content">
@@ -105,7 +105,7 @@ function Project() {
       <div
         onClick={toggleProjectModalThree}
         className='btn-modal project-modal-icon'>
-        <img src='assets/icons/folder.png' alt='folder' />
+        <img src='assets/icons/folder.png?as=webp' alt='folder' />
         <p>hanbyeol.me</p>
       </div>
 
@@ -114,10 +114,10 @@ function Project() {
           <div onClick={toggleProjectModalThree}>
             <div className='modal-container'>
               <div className="modal-bar">
-                <img src="assets/icons/folder-open.png" alt="folder" />
+                <img src="assets/icons/folder-open.png?as=webp" alt="folder" />
                 <p>hanbyeol.me</p>
                 <button onClick={toggleProjectModalThree} className='close-modal'>
-                  <img src="assets/icons/close.png" alt="close" />
+                  <img src="assets/icons/close.png?as=webp" alt="close" />
                 </button>
               </div>
               <div className="project-modal-content">
@@ -131,7 +131,7 @@ function Project() {
       <div
         onClick={toggleProjectModalFour}
         className='btn-modal project-modal-icon'>
-        <img src='assets/icons/folder.png' alt='folder' />
+        <img src='assets/icons/folder.png?as=webp' alt='folder' />
         <p>zapfit.ca</p>
       </div>
 
@@ -140,10 +140,10 @@ function Project() {
           <div onClick={toggleProjectModalFour}>
             <div className='modal-container'>
               <div className="modal-bar">
-                <img src="assets/icons/folder-open.png" alt="folder" />
+                <img src="assets/icons/folder-open.png?as=webp" alt="folder" />
                 <p>zapfit.ca</p>
                 <button onClick={toggleProjectModalFour} className='close-modal'>
-                  <img src="assets/icons/close.png" alt="close" />
+                  <img src="assets/icons/close.png?as=webp" alt="close" />
                 </button>
               </div>
               <div className="project-modal-content">
@@ -157,7 +157,7 @@ function Project() {
       <div
         onClick={toggleProjectModalFive}
         className='btn-modal project-modal-icon'>
-        <img src='assets/icons/folder.png' alt='folder' />
+        <img src='assets/icons/folder.png?as=webp' alt='folder' />
         <p>OnlyDevs</p>
       </div>
 
@@ -166,10 +166,10 @@ function Project() {
           <div onClick={toggleProjectModalFive}>
             <div className='modal-container'>
               <div className="modal-bar">
-                <img src="assets/icons/folder-open.png" alt="folder" />
+                <img src="assets/icons/folder-open.png?as=webp" alt="folder" />
                 <p>OnlyDevs</p>
                 <button onClick={toggleProjectModalFive} className='close-modal'>
-                  <img src="assets/icons/close.png" alt="close" />
+                  <img src="assets/icons/close.png?as=webp" alt="close" />
                 </button>
               </div>
               <div className="project-modal-content">
@@ -183,7 +183,7 @@ function Project() {
       <div
         onClick={toggleProjectModalSix}
         className='btn-modal project-modal-icon'>
-        <img src='assets/icons/folder.png' alt='folder' />
+        <img src='assets/icons/folder.png?as=webp' alt='folder' />
         <p>Booking.com</p>
       </div>
 
@@ -192,10 +192,10 @@ function Project() {
           <div onClick={toggleProjectModalSix}>
             <div className='modal-container'>
               <div className="modal-bar">
-                <img src="assets/icons/folder-open.png" alt="folder" />
+                <img src="assets/icons/folder-open.png?as=webp" alt="folder" />
                 <p>Booking.com</p>
                 <button onClick={toggleProjectModalSix} className='close-modal'>
-                  <img src="assets/icons/close.png" alt="close" />
+                  <img src="assets/icons/close.png?as=webp" alt="close" />
                 </button>
               </div>
               <div className="project-modal-content">

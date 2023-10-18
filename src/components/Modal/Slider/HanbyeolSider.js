@@ -4,7 +4,7 @@ import './Slider.css'
 
 function HanbyeolSider() {
   const slides =[
-    {url: "assets/projects/Hanbyeol/1.jpg"},
+    {url: "assets/projects/Hanbyeol/1.jpg?as=webp"},
   ];
   const containerStyles = {
     width: '100%',

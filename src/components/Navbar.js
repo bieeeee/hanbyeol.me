@@ -30,7 +30,7 @@ function Navbar() {
         <div className='navbar-container'>
             <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
               <Link className={dropdown ? 'nav-hover' : 'nav-links'}>
-                <img src='assets/icons/logo-icon.png' alt='Logo' className='navbar-logo' />
+                <img src='assets/icons/logo-icon.png?as=webp' alt='Logo' className='navbar-logo' />
                 {t('Start')}
               </Link>
               {dropdown && <Dropdown />}
