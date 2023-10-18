@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, lazy, Suspense } from 'react'
 import "./Modal.css"
-import Skill from './Skill';
-import Project from './Project';
+const Skill = lazy(() => import('./Skill'));
+const Project = lazy(() => import('./Project'));
 
 function Modal() {
   const [skillModal, setSkillModal] = useState(false);
@@ -25,7 +25,7 @@ function Modal() {
     <>
       <div className='folders'>
         <div onClick={toggleSkillModal} className='btn-modal'>
-          <img src='assets/icons/folder.png?as=webp' alt='folder' />
+          <img rel="preload" src='assets/icons/folder.png?as=webp' alt='folder' />
           <h3>Skills</h3>
         </div>
 
@@ -41,7 +41,9 @@ function Modal() {
                     </button>
                   </div>
                   <div className="modal-content modal-skill">
-                    <Skill />
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <Skill />
+                    </Suspense>
                   </div>
                 </div>
               </div>
@@ -65,14 +67,16 @@ function Modal() {
                     </button>
                   </div>
                   <div className="modal-content">
-                    <Project />
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <Project />
+                    </Suspense>
                   </div>
                 </div>
               </div>
           </div>)
         }
 
-        <a href="assets/resume.pdf" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
+        <a href="assets/resume.pdf" target='_blank' rel="preload noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
           <img rel="preload" src="assets/icons/notepad.png?as=webp" alt="resume" style={{width: '48px'}} />
           <p>Resume</p>
         </a>
