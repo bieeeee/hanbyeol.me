@@ -7,9 +7,9 @@ const Modal = lazy(() => import('../Modal/Modal'));
 function Home() {
   return (
     <>
-      {/* <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Terminal />
-      </Suspense> */}
+      </Suspense>
       <Modal />
     </>
   );
