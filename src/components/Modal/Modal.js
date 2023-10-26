@@ -76,10 +76,10 @@ function Modal() {
           </div>)
         }
 
-        <a href="assets/resume.pdf" target='_blank' rel="preload noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
+        {/* <a href="assets/resume.pdf" target='_blank' rel="preload noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
           <img rel="preload" src="assets/icons/notepad.png?as=webp" alt="resume" style={{width: '48px'}} />
           <p>Resume</p>
-        </a>
+        </a> */}
 
         <a href="https://www.linkedin.com/in/hanbyeol-kwon/" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
           <img rel="preload" src="assets/icons/linkedin.png?as=webp" alt="linkedin" style={{width: '48px'}} />
