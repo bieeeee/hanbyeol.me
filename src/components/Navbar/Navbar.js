@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Dropdown from '../Dropdown/Dropdown';
 import './Navbar.css';
 import Time from '../Time/Time.js';
-import '../../i18n';
-import { useTranslation } from 'react-i18next';
 
 function Navbar() {
   const[dropdown, setDropdown] = useState(false);
@@ -21,8 +19,6 @@ function Navbar() {
     setDropdown(!dropdown);
   };
 
-  const { t } = useTranslation();
-
 
   return (
     <>
@@ -31,7 +27,7 @@ function Navbar() {
             <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
               <Link className={dropdown ? 'nav-hover' : 'nav-links'}>
                 <img src='assets/icons/logo-icon.png?as=webp' alt='Logo' className='navbar-logo' />
-                {t('Start')}
+                Start
               </Link>
               {dropdown && <Dropdown />}
             </div>
