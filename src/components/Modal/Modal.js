@@ -1,18 +1,25 @@
-import React, { useState, lazy, Suspense } from 'react'
+import React, { useState } from 'react'
 import "./Modal.css"
-const Skill = lazy(() => import('./Skill'));
-const Project = lazy(() => import('./Project'));
 
 function Modal() {
   const [skillModal, setSkillModal] = useState(false);
   const [projectModal, setProjectModal] = useState(false);
+  const [skillComponent, setSkillComponent] = useState(null);
+  const [projectComponent, setProjectComponent] = useState(null);
 
-  const toggleSkillModal = () => {
+
+  const toggleSkillModal = async () => {
     setSkillModal(!skillModal);
+    const { default: SkillComponent } = await import('./Skill');
+    setSkillComponent(<SkillComponent />);
   }
-  const toggleProjectModal = () => {
+
+  const toggleProjectModal = async () => {
     setProjectModal(!projectModal);
+    const { default: ProjectComponent } = await import('./Project');
+    setProjectComponent(<ProjectComponent />);
   }
+
 
   // For hiding scroll purpose
   if(skillModal) {
@@ -25,7 +32,7 @@ function Modal() {
     <>
       <div className='folders'>
         <div onClick={toggleSkillModal} className='btn-modal'>
-          <img rel="preload" src='assets/icons/folder.png?as=webp' alt='folder' />
+          <img rel="preload" src='assets/icons/folder.png?as=webp' alt='folder' style={{width: '48px', height: '48px'}} />
           <h3>Skills</h3>
         </div>
 
@@ -41,9 +48,7 @@ function Modal() {
                     </button>
                   </div>
                   <div className="modal-content modal-skill">
-                    <Suspense fallback={<div>Loading...</div>}>
-                      <Skill />
-                    </Suspense>
+                    {skillComponent}
                   </div>
                 </div>
               </div>
@@ -51,7 +56,7 @@ function Modal() {
         }
 
         <div onClick={toggleProjectModal} className='btn-modal'>
-          <img rel="preload" src='assets/icons/folder.png?as=webp' alt='folder' />
+          <img rel="preload" src='assets/icons/folder.png?as=webp' alt='folder' style={{width: '48px', height: '48px'}} />
           <h3>Projects</h3>
         </div>
 
@@ -67,9 +72,7 @@ function Modal() {
                     </button>
                   </div>
                   <div className="modal-content">
-                    <Suspense fallback={<div>Loading...</div>}>
-                      <Project />
-                    </Suspense>
+                    {projectComponent}
                   </div>
                 </div>
               </div>
@@ -82,16 +85,16 @@ function Modal() {
         </a> */}
 
         <a href="https://www.linkedin.com/in/hanbyeol-kwon/" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
-          <img rel="preload" src="assets/icons/linkedin.png?as=webp" alt="linkedin" style={{width: '48px'}} />
+          <img rel="preload" src="assets/icons/linkedin.png?as=webp" alt="linkedin" style={{width: '48px', height: '48px'}} />
           <p>LinkedIn</p>
         </a>
 
         <a href="https://github.com/bieeeee" target='_blank' rel="noreferrer noopener" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
-          <img rel="preload" src="assets/icons/github.png?as=webp" alt="github" style={{width: '48px'}} />
+          <img rel="preload" src="assets/icons/github.png?as=webp" alt="github" style={{width: '48px', height: '48px'}} />
           <p>Github</p>
         </a>
         <a href="/contact" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
-          <img rel="preload" src="assets/icons/email.png?as=webp" alt="contact" style={{width: '48px'}} />
+          <img rel="preload" src="assets/icons/email.png?as=webp" alt="contact" style={{width: '48px', height: '48px'}} />
           <p>Contact</p>
         </a>
       </div>
