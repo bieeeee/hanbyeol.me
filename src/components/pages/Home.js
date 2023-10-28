@@ -1,18 +1,35 @@
-import React, { lazy, Suspense } from 'react';
+import React, { useState, useEffect, useCallback, lazy, Suspense } from 'react';
 import '../../App.css';
-const Modal = lazy(() => import('../Modal/Modal'));
+import ModalC from '../Modal/Modal';
+
+const Modal = ({ setLoadedModal }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadedModal();
+    }, 1000);
+  }, [setLoadedModal]);
+
+  return <ModalC />;
+};
+
 const Terminal = lazy(() => import('../Terminal/Terminal'));
 
-
 function Home() {
+  const [loadModal, setLoadModal] = useState(false);
+
+
+  const setLoadedModal = useCallback(() => {
+    setLoadModal(true);
+  }, []);
+
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Terminal />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Modal />
-      </Suspense>
+      {loadModal && (
+        <Suspense fallback={<div>Loading...</div>}>
+          <Terminal />
+        </Suspense>
+      )}
+      <Modal setLoadedModal={setLoadedModal} />
     </>
   );
 }
