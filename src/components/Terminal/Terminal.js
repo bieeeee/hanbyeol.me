@@ -14,7 +14,7 @@ function Terminal() {
       {!isClosed && (
         <div className='terminal-container'>
           <div className="terminal-bar">
-            <img src='assets/icons/prompt.png?as=webp' alt='folder' />
+            <img src='assets/icons/prompt.png?as=webp' alt='folder' style={{width: '20px', height: '20px'}} />
             <p>About Me</p>
             <button className='btn-close' onClick={handleClose}>
               <img src="assets/icons/close.png?as=webp" alt="close" />
