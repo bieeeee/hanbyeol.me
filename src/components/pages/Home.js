@@ -24,11 +24,11 @@ function Home() {
 
   return (
     <>
-      {loadModal && (
+      {/* {loadModal && (
         <Suspense fallback={<div>Loading...</div>}>
           <Terminal />
         </Suspense>
-      )}
+      )} */}
       <Modal setLoadedModal={setLoadedModal} />
     </>
   );
