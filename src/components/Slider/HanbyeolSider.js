@@ -1,10 +1,9 @@
-import React from 'react'
 import ImageSlider from './ImageSlider'
 import './Slider.css'
 
 function HanbyeolSider() {
   const slides =[
-    {url: "assets/projects/Hanbyeol/1.jpg?as=webp"},
+    {url: "assets/projects/Hanbyeol/1.jpg"},
   ];
   const containerStyles = {
     width: '100%',

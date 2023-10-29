@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Terminal.css';
 import { TypeAnimation } from 'react-type-animation';
 

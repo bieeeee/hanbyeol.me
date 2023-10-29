@@ -1,13 +1,12 @@
-import React from 'react'
 import ImageSlider from './ImageSlider'
 import './Slider.css'
 
 function BookingSlider() {
   const slides =[
-    {url: "assets/projects/Booking/1.jpg?as=webp"},
-    {url: "assets/projects/Booking/2.jpg?as=webp"},
-    {url: "assets/projects/Booking/3.jpg?as=webp"},
-    {url: "assets/projects/Booking/4.jpg?as=webp"}
+    {url: "assets/projects/Booking/1.jpg"},
+    {url: "assets/projects/Booking/2.jpg"},
+    {url: "assets/projects/Booking/3.jpg"},
+    {url: "assets/projects/Booking/4.jpg"}
   ];
   const containerStyles = {
     width: '100%',

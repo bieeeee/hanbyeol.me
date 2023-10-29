@@ -1,4 +1,3 @@
-import React from 'react'
 import './Time.css';
 import { useState } from 'react';
 

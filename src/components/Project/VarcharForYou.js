@@ -1,4 +1,3 @@
-import React from 'react'
 import '../Modal/Modal.css'
 import VarcharSlider from '../Slider/VarcharSlider'
 

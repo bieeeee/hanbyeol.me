@@ -9,14 +9,4 @@ export const MenuItems = [
     path: '/contact',
     cName: 'dropdown-link'
   }
-  // {
-  //   title: 'Weather',
-  //   path: '/weather',
-  //   cName: 'dropdown-link'
-  // },
-  // {
-  //   title: 'Photography',
-  //   path: '/photography',
-  //   cName: 'dropdown-link'
-  // }
 ];

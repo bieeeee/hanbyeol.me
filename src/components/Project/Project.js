@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import "../Modal/Modal.css"
 import VarcharForYou from './VarcharForYou'
 import Hanbyeol from './Hanbyeol'
