@@ -18,12 +18,6 @@ function Modal() {
     const { default: ProjectComponent } = await import('../Project/Project');
     setProjectComponent(<ProjectComponent />);
   }
-  // For hiding scroll purpose
-  if(skillModal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
 
   return (
     <>
