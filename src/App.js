@@ -11,7 +11,7 @@ function App() {
       <div className='background-image'>
         <Router>
           <Navbar />
-          <Suspense fallback={<h2>Loading...</h2>}>
+          <Suspense fallback={<div className='fallback'>Loading...</div>}>
             <Routes>
               <Route path='/' exact element={<Home />} />
               <Route path='/contact' exact element={<Contact />} />
