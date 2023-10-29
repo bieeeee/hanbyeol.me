@@ -1,6 +1,6 @@
 import React from 'react'
-import './Modal.css'
-import HanbyeolSlider from './Slider/HanbyeolSider'
+import '../Modal/Modal.css'
+import HanbyeolSlider from '../Slider/HanbyeolSider'
 
 function Hanbyeol() {
   return (

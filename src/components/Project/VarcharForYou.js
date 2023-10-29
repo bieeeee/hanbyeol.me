@@ -1,6 +1,6 @@
 import React from 'react'
-import './Modal.css'
-import VarcharSlider from './Slider/VarcharSlider'
+import '../Modal/Modal.css'
+import VarcharSlider from '../Slider/VarcharSlider'
 
 function VarcharForYou() {
   return (

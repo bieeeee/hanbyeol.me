@@ -1,6 +1,6 @@
 import React from 'react'
-import './Modal.css'
-import BookingSlider from './Slider/BookingSlider'
+import '../Modal/Modal.css'
+import BookingSlider from '../Slider/BookingSlider'
 
 function Booking() {
   return (

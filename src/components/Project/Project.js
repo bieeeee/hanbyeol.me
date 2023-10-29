@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Modal.css"
+import "../Modal/Modal.css"
 import VarcharForYou from './VarcharForYou'
 import Hanbyeol from './Hanbyeol'
 import Zapfit from './Zapfit'
@@ -14,9 +14,6 @@ function Project() {
   const [projectModalFour, setProjectModalFour] = useState(false);
   const [projectModalFive, setProjectModalFive] = useState(false);
   const [projectModalSix, setProjectModalSix] = useState(false);
-
-
-
 
   const toggleProjectModalOne = (e) => {
     e.stopPropagation();

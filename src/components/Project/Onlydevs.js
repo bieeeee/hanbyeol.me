@@ -1,6 +1,6 @@
 import React from 'react'
-import './Modal.css'
-import OnlydevsSlider from './Slider/OnlydevsSlider'
+import '../Modal/Modal.css'
+import OnlydevsSlider from '../Slider/OnlydevsSlider'
 
 function Onlydevs() {
   return (

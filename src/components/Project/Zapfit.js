@@ -1,6 +1,6 @@
 import React from 'react'
-import './Modal.css'
-import ZapfitSlider from './Slider/ZapfitSlider'
+import '../Modal/Modal.css'
+import ZapfitSlider from '../Slider/ZapfitSlider'
 
 function Zapfit() {
   return (
