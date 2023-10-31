@@ -21,7 +21,6 @@ function Terminal() {
           </div>
           <div className="terminal-content">
             <TypeAnimation
-              preRenderFirstString={true}
               sequence={[
                 "Hello, bonjour!\nMy name is Hanbyeol(or Bie).\nWelcome to my 90s-inspired screen, where web development meets nostalgia.\nBesides coding, I dabble in DIY, baking, camping, and being the best dog mom ever!\nIf you're up for a fun project, feel free to reach out through this website or connect with me on LinkedIn.\nHave a nice day ou bonne soirée! :)", // Types 'One'
                 1000,
