@@ -11,9 +11,6 @@ function Navbar() {
       setStartAnimation(true);
     };
     window.onload = handleLoad;
-    return () => {
-      window.onload = null;
-    };
   }, []);
 
   const onMouseEnter = () => {
