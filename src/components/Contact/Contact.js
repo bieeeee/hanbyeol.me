@@ -29,25 +29,25 @@ export const Contact = () => {
           <img src='assets/icons/prompt.png' alt='folder' style={{ width: '20px', height: '20px' }} />
           <p>Contact me</p>
           <button className='btn-close'>
-            <img src="assets/icons/close.png" alt="close" />
+            <img src="assets/icons/close.png" alt="" style={{ width: '12px', height: '12px' }} />
           </button>
         </div>
         <div className='contact-content'>
-          <img src="assets/icons/email.png" alt="email" style={{ padding: '23px', margin: '0 auto', width: '102px' }} />
+          <img src="assets/icons/email.png" alt="email" style={{ padding: '23px', margin: '0 auto', width: '102px', height: '102px' }} />
           <form ref={form} onSubmit={sendEmail} className='contact-form'>
             {/* <div className="contact-form-content">
             <p>Let's get in touch!<br />I'd love to work on stupid and fun projects!</p>
           </div> */}
             <div className='contact-form-content'>
-              <p style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Your name:</p>
+              <label htmlFor="user_name" style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Your name:</label>
               <input type="text" name="user_name" />
             </div>
             <div className='contact-form-content'>
-              <p style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Your email:</p>
+              <label htmlFor="user_email" style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Your email:</label>
               <input type="email" name="user_email" />
             </div>
             <div className='contact-form-content'>
-              <p style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Message:</p>
+              <label htmlFor="message" style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Message:</label>
               <textarea name="message" />
             </div>
             <input type="submit" value="Send" className='btn-send' />

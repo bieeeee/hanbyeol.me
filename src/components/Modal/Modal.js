@@ -34,7 +34,7 @@ function Modal() {
                     <img src="assets/icons/folder-open.png" alt="folder" />
                     <p>Skills</p>
                     <button onClick={toggleSkillModal} className='close-modal'>
-                      <img src="assets/icons/close.png" alt="close" />
+                      <img src="assets/icons/close.png" alt="close" style={{ width: '12px', height: '12px' }} />
                     </button>
                   </div>
                   <div className="modal-content modal-skill">
@@ -56,7 +56,7 @@ function Modal() {
                     <img src="assets/icons/folder-open.png" alt="folder" />
                     <p>Projects</p>
                     <button onClick={toggleProjectModal} className='close-modal'>
-                      <img src="assets/icons/close.png" alt="close" />
+                      <img src="assets/icons/close.png" alt="" style={{ width: '12px', height: '12px' }} />
                     </button>
                   </div>
                   <div className="modal-content">
