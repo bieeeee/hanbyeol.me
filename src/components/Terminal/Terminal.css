@@ -45,8 +45,8 @@
 }
 
 .btn-close img {
-  height: 16px;
   padding-right: 0 !important;
+  margin-bottom: 2px;
 }
 
 .btn-close:active {
