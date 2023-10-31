@@ -1,12 +1,17 @@
 export const MenuItems = [
   {
-    title: 'Home',
-    path: '/',
+    title: 'About',
+    id: 'about',
+    cName: 'dropdown-link'
+  },
+  {
+    title: 'Files',
+    id: 'files',
     cName: 'dropdown-link'
   },
   {
     title: 'Contact',
-    path: '/contact',
+    id: 'contact',
     cName: 'dropdown-link'
   }
 ];
