@@ -9,7 +9,7 @@ function Terminal() {
   }
 
   return (
-    <>
+    <div className='terminal' id='about'>
       {!isClosed && (
         <div className='terminal-container'>
           <div className="terminal-bar">
@@ -33,7 +33,7 @@ function Terminal() {
           </div>
         </div>
       )}
-    </>
+    </div>
   )
 }
 

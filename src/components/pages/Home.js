@@ -1,36 +1,25 @@
-import { useState, useEffect, useCallback, lazy, Suspense } from 'react';
 import '../../App.css';
-import ModalC from '../Modal/Modal';
-
-const Modal = ({ setLoadedModal }) => {
-  useEffect(() => {
-    setTimeout(() => {
-      setLoadedModal();
-    }, 1000);
-  }, [setLoadedModal]);
-
-  return <ModalC />;
-};
-
-const Terminal = lazy(() => import('../Terminal/Terminal'));
+import './Home.css';
+import { Suspense, lazy } from 'react';
+import Navbar from '../Navbar/Navbar';
+import Terminal from '../Terminal/Terminal';
+const Modal = lazy(() => import('../Modal/Modal'));
+const Contact = lazy(() => import('../Contact/Contact'));
 
 function Home() {
-  const [loadModal, setLoadModal] = useState(false);
-
-
-  const setLoadedModal = useCallback(() => {
-    setLoadModal(true);
-  }, []);
-
   return (
-    <>
-      {loadModal && (
+    <div className='home'>
+      <Navbar />
+      <div className='sections'>
+        <Terminal />
         <Suspense fallback={<div>Loading...</div>}>
-          <Terminal />
+          <Modal />
         </Suspense>
-      )}
-      <Modal setLoadedModal={setLoadedModal} />
-    </>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Contact />
+        </Suspense>
+      </div>
+    </div>
   );
 }
 

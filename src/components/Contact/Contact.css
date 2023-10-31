@@ -1,8 +1,11 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-contact {
-  margin-top: 50px;
   width: 50vw;
-  /* height: 40vh; */
-  margin-top: 100px !important;
   margin: 0 auto;
   background-color: #d4d4d4;
   border-top: 2px solid white;
@@ -23,8 +26,6 @@
   display: flex;
   flex-direction: column;
   align-items: center
-  /* width: 50vw; */
-  /* display: table-column; */
 }
 
 .contact-form-content {
