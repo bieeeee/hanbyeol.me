@@ -40,15 +40,15 @@ export const Contact = () => {
           </div> */}
             <div className='contact-form-content'>
               <label htmlFor="user_name" style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Your name:</label>
-              <input type="text" name="user_name" />
+              <input id="user_name" type="text" name="user_name" />
             </div>
             <div className='contact-form-content'>
               <label htmlFor="user_email" style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Your email:</label>
-              <input type="email" name="user_email" />
+              <input id="user_email" type="email" name="user_email" />
             </div>
             <div className='contact-form-content'>
               <label htmlFor="message" style={{ whiteSpace: 'nowrap', marginRight: '10px', width: '80px' }}>Message:</label>
-              <textarea name="message" />
+              <textarea id="message" name="message" />
             </div>
             <input type="submit" value="Send" className='btn-send' />
           </form>
