@@ -23,7 +23,7 @@ function Navbar() {
         <div className='navbar-container'>
             <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
               <div className={dropdown ? 'nav-hover' : 'nav-links'}>
-                <img src='assets/icons/logo-icon.png?as=webp' alt='Logo' className='navbar-logo' style={{width: '19px', height: '19px'}} />
+                <img rel='preload' src='assets/icons/logo-icon.png' alt='Logo' className='navbar-logo' style={{width: '19px', height: '19px'}} />
                 Start
               </div>
               {dropdown && <Dropdown />}
