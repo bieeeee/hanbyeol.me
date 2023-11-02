@@ -1,6 +1,10 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import './Terminal.css';
-import { TypeAnimation } from 'react-type-animation';
+const TypeAnimation = lazy(() =>
+  import("react-type-animation").then(module => {
+    return { default: module.TypeAnimation };
+  })
+);
 
 function Terminal() {
   const [isClosed, setIsClosed] = useState(false);
@@ -20,17 +24,19 @@ function Terminal() {
             </button>
           </div>
           <div className="terminal-content">
-            <TypeAnimation
-              sequence={[
-                "Hello, bonjour!\nMy name is Hanbyeol(or Bie).\nWelcome to my 90s-inspired screen, where web development meets nostalgia.\nBesides coding, I dabble in DIY, baking, camping, and being the best dog mom ever!\nIf you're up for a fun project, feel free to reach out through this website or connect with me on LinkedIn.\nHave a nice day ou bonne soirée! :)", // Types 'One'
-                1000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-              speed={80}
-              style={{ whiteSpace: 'pre-line', display: 'inline-block' }}
-            />
+            <Suspense>
+              <TypeAnimation
+                sequence={[
+                  "Hello, bonjour!\nMy name is Hanbyeol(or Bie).\nWelcome to my 90s-inspired screen, where web development meets nostalgia.\nBesides coding, I dabble in DIY, baking, camping, and being the best dog mom ever!\nIf you're up for a fun project, feel free to reach out through this website or connect with me on LinkedIn.\nHave a nice day ou bonne soirée! :)", // Types 'One'
+                  1000,
+                ]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+                speed={80}
+                style={{ whiteSpace: 'pre-line', display: 'inline-block' }}
+              />
+            </Suspense>
           </div>
         </div>
       )}
