@@ -18,7 +18,7 @@ function Terminal() {
         <div className='terminal-container'>
           <div className="terminal-bar">
             <img src='assets/icons/prompt.png' alt='folder' style={{ width: '20px', height: '20px' }} />
-            <p>About Me</p>
+            About Me
             <button className='btn-close' aria-label="Close button" onClick={handleClose}>
               <img src="assets/icons/close.png" alt="close-button" style={{ width: '12px', height: '12px' }} />
             </button>
