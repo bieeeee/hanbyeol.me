@@ -10,14 +10,14 @@ function App() {
     <div className='home'>
       <Navbar />
       <div className='sections'>
+        <Terminal />
         <Suspense fallback={<div>Loading...</div>}>
-          <Terminal />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Modal />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Contact />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Modal />
+          </Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Contact />
+          </Suspense>
         </Suspense>
       </div>
     </div>
