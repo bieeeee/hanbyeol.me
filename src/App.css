@@ -12,19 +12,9 @@ body {
   padding: 0;
   top: 40px;
   height: 100vh;
-  font-family: "px sans nouveaux";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-.home {
-  height: 100vh;
 }
 
 .sections {
-  background-image: url('/public/assets/bg.jpg');
-  background-size: cover;
   width: 100%;
   height: calc(100vh - 41px);
   position: relative;
@@ -37,13 +27,6 @@ body {
 .sections::-webkit-scrollbar{
   display: none;
 }
-
-.sections > * {
-  width: 100%;
-  height: calc(100vh - 41px);
-  scroll-snap-align: start;
-}
-
 
 @font-face{
   font-family: "px sans nouveaux";
