@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   font-family: "px sans nouveaux";
+  font-style: normal;
+  font-display: swap;
   font-size: 11px;
   font-weight: 400;
 }
@@ -39,17 +41,6 @@ body {
   height: calc(100vh - 40px);
   scroll-snap-align: start;
 }
-
-
-@font-face{
-  font-family: "px sans nouveaux";
-  src: url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff")format("woff"),
-       url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff2")format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 
 /* @font-face {
   font-family: 'DungGeunMo';
