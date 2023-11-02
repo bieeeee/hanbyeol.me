@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 import './Navbar.css';
-import Time from '../Time/Time.js';
 
 function Navbar() {
   const[dropdown, setDropdown] = useState(false);
@@ -28,7 +27,6 @@ function Navbar() {
               </div>
               {dropdown && <Dropdown />}
             </div>
-            <div className='nav-item'><Time /></div>
         </div>
       </nav>
     </>

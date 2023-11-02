@@ -1,7 +1,7 @@
 import { useState, lazy, Suspense } from 'react'
 import './Terminal.css';
 const TypeAnimation = lazy(() =>
-  import("react-type-animation").then(module => {
+  window.onload = import("react-type-animation").then(module => {
     return { default: module.TypeAnimation };
   })
 );
