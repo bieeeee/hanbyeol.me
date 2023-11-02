@@ -1,7 +1,7 @@
 import './App.css';
 import { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Terminal from './components/Terminal/Terminal';
+const Terminal = lazy(() => import('./components/Terminal/Terminal'));
 const Modal = lazy(() => import('./components/Modal/Modal'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
 
@@ -10,7 +10,9 @@ function App() {
     <div className='home'>
       <Navbar />
       <div className='sections'>
-        <Terminal />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Terminal />
+        </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
           <Modal />
         </Suspense>
