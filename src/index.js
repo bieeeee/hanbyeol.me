@@ -1,5 +1,9 @@
 import React from 'react';
-import { hydrateRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 
-hydrateRoot(document.getElementById('root'), <App />);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+ReactDOM.hydrateRoot(document.getElementById('root'), <App />);
+// root.render(
+//   <App />
+// );
