@@ -1,5 +1,5 @@
 import './App.css';
-import { Suspense, lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Terminal from './components/Terminal/Terminal';
 const Modal = lazy(() => import('./components/Modal/Modal'));
