@@ -7,18 +7,20 @@ const Contact = lazy(() => import('./components/Contact/Contact'));
 
 function App() {
   return (
-    <div className='home'>
-      <Navbar />
-      <div className='sections'>
-        <Terminal />
-        <Suspense fallback={<div>Loading...</div>}>
-          <Modal />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Contact />
-        </Suspense>
+    <>
+      <div className='home'>
+        <Navbar />
+        <div className='sections'>
+          <Terminal />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Modal />
+          </Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Contact />
+          </Suspense>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
