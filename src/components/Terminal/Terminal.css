@@ -1,10 +1,18 @@
+.terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 41px);
+  scroll-snap-align: start;
+}
+
 .terminal-container {
   width: 80%;
   height: fit-content;
   margin: 0 auto;
   padding: 5px 5px 5px 5px;
   background-color: #d4d4d4;
-  margin-top: 10vh;
   border-top: 2px solid white;
   border-right: 2px solid #5b5b5b;
   border-bottom: 2px solid #5b5b5b;
@@ -40,8 +48,8 @@
 }
 
 .btn-close img {
-  height: 16px;
   padding-right: 0 !important;
+  margin-bottom: 2px;
 }
 
 .btn-close:active {
@@ -53,7 +61,7 @@
 
 
 .terminal-content {
-  height: fit-content;
+  height: 235px;
   border: 1px solid black;
   background-color: black;
   color: greenyellow;
@@ -64,7 +72,34 @@
   border-right: 2px solid white;
 }
 
-.Typewriter {
-  font-size: 21px;
-  line-height: 23px;
+span {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+@media (max-width: 804px) {
+  .terminal-content {
+    height: 250px;
+  }
+
+  span {
+    font-size: 11px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 506px) {
+  .terminal-content {
+    height: 300px;
+  }
+  span {
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  .terminal-content {
+    height: 350px;
+  }
 }

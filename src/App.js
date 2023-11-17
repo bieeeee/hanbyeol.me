@@ -1,25 +1,24 @@
 import './App.css';
-import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar/Navbar';
-const Home = lazy(() => import('./components/pages/Home'));
-const Contact = lazy(() => import('./components/pages/Contact'));
+import Terminal from './components/Terminal/Terminal';
+const Modal = lazy(() => import('./components/Modal/Modal'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
 
 function App() {
   return (
-    <>
-      <div className='background-image'>
-        <Router>
-          <Navbar />
-          <Suspense fallback={<div className='fallback'>Loading...</div>}>
-            <Routes>
-              <Route path='/' exact element={<Home />} />
-              <Route path='/contact' exact element={<Contact />} />
-            </Routes>
-          </Suspense>
-        </Router>
+    <div className='home'>
+      <Navbar />
+      <div className='sections'>
+        <Terminal />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Modal />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Contact />
+        </Suspense>
       </div>
-    </>
+    </div>
   );
 }
 

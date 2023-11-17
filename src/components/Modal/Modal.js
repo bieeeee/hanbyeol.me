@@ -20,7 +20,7 @@ function Modal() {
   }
 
   return (
-    <>
+    <div className='modals' id='files'>
       <div className='folders'>
         <div onClick={toggleSkillModal} className='btn-modal'>
           <img rel="preload" src='assets/icons/folder.png' alt='folder' style={{width: '48px', height: '48px'}} />
@@ -34,7 +34,7 @@ function Modal() {
                     <img src="assets/icons/folder-open.png" alt="folder" />
                     <p>Skills</p>
                     <button onClick={toggleSkillModal} className='close-modal'>
-                      <img src="assets/icons/close.png" alt="close" />
+                      <img src="assets/icons/close.png" alt="close" style={{ width: '12px', height: '12px' }} />
                     </button>
                   </div>
                   <div className="modal-content modal-skill">
@@ -56,7 +56,7 @@ function Modal() {
                     <img src="assets/icons/folder-open.png" alt="folder" />
                     <p>Projects</p>
                     <button onClick={toggleProjectModal} className='close-modal'>
-                      <img src="assets/icons/close.png" alt="close" />
+                      <img src="assets/icons/close.png" alt="" style={{ width: '12px', height: '12px' }} />
                     </button>
                   </div>
                   <div className="modal-content">
@@ -66,24 +66,16 @@ function Modal() {
               </div>
           </div>)
         }
-        {/* <a href="assets/resume.pdf" target='_blank' rel="preload noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
-          <img rel="preload" src="assets/icons/notepad.png" alt="resume" style={{width: '48px'}} />
-          <p>Resume</p>
-        </a> */}
         <a href="https://www.linkedin.com/in/hanbyeol-kwon/" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
-          <img rel="preload" src="assets/icons/linkedin.png" alt="linkedin" style={{width: '48px', height: '48px'}} />
+          <img rel="preload" src="assets/icons/linkedin.png" alt="linkedin-icon" style={{width: '48px', height: '48px'}} />
           <p>LinkedIn</p>
         </a>
         <a href="https://github.com/bieeeee" target='_blank' rel="noreferrer noopener" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
-          <img rel="preload" src="assets/icons/github.png" alt="github" style={{width: '48px', height: '48px'}} />
+          <img rel="preload" src="assets/icons/github.png" alt="github-icon" style={{width: '48px', height: '48px'}} />
           <p>Github</p>
         </a>
-        <a href="/contact" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
-          <img rel="preload" src="assets/icons/email.png" alt="contact" style={{width: '48px', height: '48px'}} />
-          <p>Contact</p>
-        </a>
       </div>
-    </>
+    </div>
   );
 }
 

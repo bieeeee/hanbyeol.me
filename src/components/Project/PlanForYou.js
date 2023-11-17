@@ -21,15 +21,15 @@ function PlanForYou() {
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>
           <a href='https://planforyou.herokuapp.com' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
-            <img src="assets/icons/internet.png?as=webp" alt="link" />
+            <img src="assets/icons/internet.png" alt="link" />
             <p>Site.html</p>
           </a>
           <a href='https://youtu.be/3jZFHTANuRQ?t=1766' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
-            <img src="assets/icons/video.png?as=webp" alt="video" />
+            <img src="assets/icons/video.png" alt="video" />
             <p>Demo.mp4</p>
           </a>
           <a href='https://github.com/bieeeee/PLAN4U' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{textDecoration: 'none'}}>
-            <img src="assets/icons/github.png?as=webp" alt="repo" />
+            <img src="assets/icons/github.png" alt="repo" />
             <p>Source</p>
           </a>
         </div>

@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Dropdown from '../Dropdown/Dropdown';
 import './Navbar.css';
-import Time from '../Time/Time.js';
 
 function Navbar() {
   const[dropdown, setDropdown] = useState(false);
@@ -10,11 +8,9 @@ function Navbar() {
   const onMouseEnter = () => {
     setDropdown(true);
   };
-
   const onMouseLeave = () => {
     setDropdown(false);
   };
-
   const onClick = () => {
     setDropdown(!dropdown);
   };
@@ -25,13 +21,12 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
             <div className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
-              <Link className={dropdown ? 'nav-hover' : 'nav-links'}>
-                <img src='assets/icons/logo-icon.png?as=webp' alt='Logo' className='navbar-logo' style={{width: '19px', height: '19px'}} />
+              <div className={dropdown ? 'nav-hover' : 'nav-links'}>
+                <img rel='preload' src='assets/icons/logo-icon.png' alt='Logo' className='navbar-logo' style={{width: '19px', height: '19px'}} />
                 Start
-              </Link>
+              </div>
               {dropdown && <Dropdown />}
             </div>
-            <div className='nav-item'><Time /></div>
         </div>
       </nav>
     </>
