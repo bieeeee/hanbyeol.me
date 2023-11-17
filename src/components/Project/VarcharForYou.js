@@ -20,10 +20,6 @@ function VarcharForYou() {
           </div>
         </div>
         <div className='modal-content-grid' style={{ border: 'none', marginLeft: '5px' }}>
-          <a href='https://varchar.herokuapp.com/' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{ textDecoration: 'none' }}>
-            <img src="assets/icons/internet.png" alt="link" />
-            <p>Site.html</p>
-          </a>
           <a href='https://github.com/bieeeee/Varchar' target='_blank' rel="noreferrer noopener" className='skill-logo' style={{ textDecoration: 'none' }}>
             <img src="assets/icons/github.png" alt="repo" />
             <p>Source</p>

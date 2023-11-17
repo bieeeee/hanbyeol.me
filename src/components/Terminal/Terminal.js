@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense } from 'react'
+import React, { useState, lazy, Suspense } from 'react'
 import './Terminal.css';
 const TypeAnimation = lazy(() =>
   window.onload = import("react-type-animation").then(module => {
