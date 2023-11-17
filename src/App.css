@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "px sans nouveaux";
+  font-family: 'DungGeunMo';
   font-size: 11px;
   font-weight: 400;
 }
@@ -29,20 +29,10 @@ body {
   display: none;
 }
 
-@font-face{
-  font-family: "px sans nouveaux";
-  src: url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff")format("woff"),
-       url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff2")format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-/* @font-face {
+@font-face {
   font-family: 'DungGeunMo';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  unicode-range: U+AC00, U+D7AF;
-} */
+  font-display: swap;
+}
