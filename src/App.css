@@ -8,35 +8,34 @@
 }
 
 body {
-  background-image: url('../public/assets/bg.jpg');
-  background-size: cover;
   margin: 0;
   padding: 0;
+  top: 40px;
   height: 100vh;
 }
 
-.background-image {
-  overflow: auto;
-  height: 100vh;
+.sections {
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  width: 100%;
+  height: calc(100vh - 41px);
+  position: relative;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
-.fallback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sections::-webkit-scrollbar{
+  display: none;
 }
 
 @font-face{
   font-family: "px sans nouveaux";
-  src: url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.eot");
-  src: url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.eot?#iefix")format("embedded-opentype"),
-      url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff")format("woff"),
-      url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff2")format("woff2"),
-      url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.ttf")format("truetype"),
-      url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.svg#px sans nouveaux")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
+  src: url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff")format("woff"),
+       url("https://db.onlinewebfonts.com/t/a43e9bb69f6bd612bef0d3c06918f7da.woff2")format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
