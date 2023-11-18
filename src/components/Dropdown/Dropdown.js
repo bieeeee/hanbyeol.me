@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { MenuItems } from './MenuItems';
 import './Dropdown.css';
 
-function Dropdown() {
+function Dropdown({ t }) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const smoothScrollToSection = (sectionId) => {
@@ -14,6 +13,24 @@ function Dropdown() {
       });
     }
   };
+
+  const MenuItems = [
+      {
+        title: `${t('navbar.about')}`,
+        id: 'about',
+        cName: 'dropdown-link'
+      },
+      {
+        title: 'Files',
+        id: 'files',
+        cName: 'dropdown-link'
+      },
+      {
+        title: 'Contact',
+        id: 'contact',
+        cName: 'dropdown-link'
+      }
+    ];
 
   return (
     <ul
