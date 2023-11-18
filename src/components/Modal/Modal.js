@@ -68,11 +68,11 @@ function Modal() {
         }
         <a href="https://www.linkedin.com/in/hanbyeol-kwon/" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{textDecoration: 'none', color: 'black'}}>
           <img rel="preload" src="assets/icons/linkedin.png" alt="linkedin-icon" style={{width: '48px', height: '48px'}} />
-          <p>LinkedIn</p>
+          <h3>LinkedIn</h3>
         </a>
         <a href="https://github.com/bieeeee" target='_blank' rel="noreferrer noopener" className='btn-modal btn-gh' style={{textDecoration: 'none', color: 'black'}}>
           <img rel="preload" src="assets/icons/github.png" alt="github-icon" style={{width: '48px', height: '48px'}} />
-          <p>Github</p>
+          <h3>Github</h3>
         </a>
       </div>
     </div>

@@ -5,7 +5,7 @@ const TypeAnimation = lazy(() =>
     return { default: module.TypeAnimation };
   })
 );
-function Terminal() {
+function Terminal({ t }) {
   return (
     <div className='terminal' id='about'>
       <div className='terminal-container'>
@@ -20,7 +20,7 @@ function Terminal() {
           <Suspense>
             <TypeAnimation
               sequence={[
-                "Hello, bonjour!\nMy name is Hanbyeol(or Bie).\nWelcome to my 90s-inspired screen, where web development meets nostalgia.\nBesides coding, I dabble in DIY, baking, camping, and being the best dog mom ever!\nIf you're up for a fun project, feel free to reach out through this website or connect with me on LinkedIn.\nHave a nice day ou bonne soirée! :)", // Types 'One'
+                `${t('terminal.desc')}`,
                 1000,
               ]}
               wrapper="span"
