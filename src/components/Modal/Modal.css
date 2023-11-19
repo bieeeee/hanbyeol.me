@@ -136,10 +136,6 @@
   margin: 0 auto;
 }
 
-.project-modal-icon p {
-  font-size: 9px !important;
-}
-
 .project-modal-content {
   height: fit-content;
   border: 1px solid black;
@@ -173,7 +169,6 @@
   border-radius: 4px;
   width: fit-content;
   padding: 0px 2px;
-  font-size: 9px;
   white-space: nowrap;
   margin-right: 4px;
   margin-top: 3px;
