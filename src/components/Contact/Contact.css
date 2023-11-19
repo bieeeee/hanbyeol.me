@@ -38,6 +38,13 @@
   margin-bottom: 20px;
 }
 
+.contact-form label {
+  white-space: nowrap;
+  margin-right: 10px;
+  width: 80px;
+  text-align: right;
+}
+
 .contact-form input, textarea {
   border-bottom: 2px solid white;
   border-left: 2px solid #5b5b5b;
