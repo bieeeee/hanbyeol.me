@@ -7,13 +7,13 @@ const Modal = lazy(() => import('./components/Modal/Modal'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <>
       <div className='home'>
-        <Navbar t={t} />
+        <Navbar t={t} i18n={i18n} />
         <div className='sections'>
-          <Terminal t={t} />
+          <Terminal t={t} i18n={i18n} />
           <Suspense fallback={<div>Loading...</div>}>
             <Modal t={t} />
           </Suspense>
