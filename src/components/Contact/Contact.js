@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import './Contact.css';
 import '../Terminal/Terminal.css';
 
-export const Contact = ({t}) => {
+export const Contact = ({ t }) => {
   const form = useRef();
   const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
   const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
@@ -25,12 +25,14 @@ export const Contact = ({t}) => {
   return (
     <div className='contact' id='contact'>
       <div className='container-contact'>
-        <div className="terminal-bar">
-          <img src='assets/icons/prompt.png' alt='folder' style={{ width: '20px', height: '20px' }} />
-          <p>{t('contact.contactme')}</p>
-          <button className='btn-close'>
-            <img src="assets/icons/close.png" alt="" style={{ width: '12px', height: '12px' }} />
-          </button>
+        <div className="modal-bar">
+          <div className="modal-bar-left">
+            <img src='assets/icons/prompt.png' alt='folder' />
+            <p>{t('contact.contactme')}</p>
+          </div>
+          <div className='close-modal'>
+            <img src="assets/icons/close.png" alt="" />
+          </div>
         </div>
         <div className='contact-content'>
           <img src="assets/icons/email.png" alt="email" style={{ padding: '23px', margin: '0 auto', width: '102px', height: '102px' }} />
