@@ -16,17 +16,13 @@
 }
 
 .btn-modal {
-  padding: 10px;
   display: block;
-  margin: 30px auto 0;
-  font-size: 12px;
+  margin: 0 auto;
+  padding: 10px;
   width: fit-content;
   text-align: center;
   cursor: pointer;
-}
-
-.btn-modal h3{
-  font-weight: 100;
+  line-height: 16px;
 }
 
 .modal, .overlay {
@@ -140,10 +136,6 @@
 
 .modal-content-grid p {
   margin: 0;
-}
-
-.project-modal-icon {
-  margin: 0 auto;
 }
 
 .project-modal-content {

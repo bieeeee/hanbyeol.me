@@ -24,7 +24,7 @@ function Modal({ t }) {
       <div className='folders'>
         <div onClick={toggleSkillModal} className='btn-modal'>
           <img rel="preload" src='assets/icons/folder.png' alt='folder' style={{ width: '48px', height: '48px' }} />
-          <h3>{t('modal.skills')}</h3>
+          <p>{t('modal.skills')}</p>
         </div>
         {skillModal && (
           <div className='modal'>
@@ -48,7 +48,7 @@ function Modal({ t }) {
         }
         <div onClick={toggleProjectModal} className='btn-modal'>
           <img rel="preload" src='assets/icons/folder.png' alt='folder' style={{ width: '48px', height: '48px' }} />
-          <h3>{t('modal.projects')}</h3>
+          <p>{t('modal.projects')}</p>
         </div>
         {projectModal && (
           <div className='modal'>
@@ -72,11 +72,11 @@ function Modal({ t }) {
         }
         <a href="https://www.linkedin.com/in/hanbyeol-kwon/" target='_blank' rel="noreferrer noopener" className='btn-modal' style={{ textDecoration: 'none', color: 'black' }}>
           <img rel="preload" src="assets/icons/linkedin.png" alt="linkedin-icon" style={{ width: '48px', height: '48px' }} />
-          <h3>{t('modal.linkedin')}</h3>
+          <p>{t('modal.linkedin')}</p>
         </a>
         <a href="https://github.com/bieeeee" target='_blank' rel="noreferrer noopener" className='btn-modal btn-gh' style={{ textDecoration: 'none', color: 'black' }}>
           <img rel="preload" src="assets/icons/github.png" alt="github-icon" style={{ width: '48px', height: '48px' }} />
-          <h3>{t('modal.github')}</h3>
+          <p>{t('modal.github')}</p>
         </a>
       </div>
     </div>
