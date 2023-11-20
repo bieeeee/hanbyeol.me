@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { MenuItems } from './Menuitem';
 import './Dropdown.css';
 
 function Dropdown({ t }) {
@@ -13,24 +14,6 @@ function Dropdown({ t }) {
       });
     }
   };
-
-  const MenuItems = [
-      {
-        title: `${t('navbar.about')}`,
-        id: 'about',
-        cName: 'dropdown-link'
-      },
-      {
-        title: 'Files',
-        id: 'files',
-        cName: 'dropdown-link'
-      },
-      {
-        title: 'Contact',
-        id: 'contact',
-        cName: 'dropdown-link'
-      }
-    ];
 
   return (
     <ul
@@ -47,7 +30,7 @@ function Dropdown({ t }) {
                 setClick(false);
               }}
             >
-              {item.title}
+              {t(item.title)}
             </span>
           </li>
         );
