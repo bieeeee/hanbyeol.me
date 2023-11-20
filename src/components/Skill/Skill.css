@@ -2,11 +2,10 @@
   width: fit-content;
   text-align: center;
   margin: 0 auto;
-  line-height: 2.2;
 }
 
 .skill-logo img {
   height: 43px;
   width: auto;
-  margin-bottom: -7px;
+  margin-bottom: 4px;
 }
