@@ -4,6 +4,22 @@
   },
   "navbar": {
     "start": "Start",
-    "about": "About"
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "modal": {
+    "aboutme": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "linkedin": "LinkedIn",
+    "github": "Github"
+  },
+  "contact": {
+    "contactme": "Contact me",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Message",
+    "send": "Send"
   }
 }
