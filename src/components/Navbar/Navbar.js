@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useTransition } from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 import './Navbar.css';
 
@@ -19,7 +19,6 @@ function Navbar({ t, i18n }) {
     setDropdown(!dropdown);
   };
 
-
   return (
     <>
       <nav className='navbar'>
@@ -37,7 +36,7 @@ function Navbar({ t, i18n }) {
               <div
                 className='nav-links'
                 key={locale}
-                style={{ cursor: 'pointer'}}
+                style={{ cursor: 'pointer' }}
               >
                 <div
                   style={{ fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal' }}

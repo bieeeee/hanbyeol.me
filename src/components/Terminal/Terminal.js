@@ -6,7 +6,7 @@ const TypeAnimation = lazy(() =>
     return { default: module.TypeAnimation };
   })
 );
-function Terminal({ t, i18n }) {
+function Terminal({t, i18n}) {
   const [reload, setReload] = useState(0);
   useEffect(() => {
     setReload((prev) => prev + 1);
