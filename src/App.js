@@ -1,11 +1,11 @@
 import './App.css';
 import React, { Suspense } from 'react';
-import Page from './components/page'
+import { Home } from './components/Home';
 
 function App() {
   return (
     <div className='home'>
-      <Page />
+      <Home />
     </div>
   );
 }

@@ -5,7 +5,8 @@ import Terminal from './Terminal/Terminal';
 const Modal = lazy(() => import('./Modal/Modal'));
 const Contact = lazy(() => import('./Contact/Contact'));
 
-const page = ({ t, i18n }) => {
+
+export const Home = ({ t, i18n }) => {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
@@ -23,5 +24,3 @@ const page = ({ t, i18n }) => {
     </>
   )
 }
-
-export default page
