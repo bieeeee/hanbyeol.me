@@ -1,12 +1,29 @@
 import './App.css';
-import React, { Suspense } from 'react';
-import { Home } from './components/Home';
+import React, { Suspense, lazy } from 'react';
+import {useTranslation} from 'react-i18next';
+import Navbar from './components/Navbar/Navbar';
+import Terminal from './components/Terminal/Terminal';
+const Modal = lazy(() => import('./components/Modal/Modal'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
 
 function App() {
+  const { t, i18n, ready } = useTranslation();
   return (
+    ready ?
     <div className='home'>
-      <Home />
+      <Navbar t={t} i18n={i18n} />
+      <div className='sections'>
+        <Terminal t={t} i18n={i18n} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Modal t={t} />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Contact t={t} />
+        </Suspense>
+      </div>
     </div>
+    :
+    <div>loading...</div>
   );
 }
 
