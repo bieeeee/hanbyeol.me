@@ -1,15 +1,17 @@
 import './App.css';
 import React, { Suspense, lazy } from 'react';
-import {useTranslation} from 'react-i18next';
+import i18n from './i18n';
+import {I18nextProvider, useTranslation} from 'react-i18next';
 import Navbar from './components/Navbar/Navbar';
 import Terminal from './components/Terminal/Terminal';
 const Modal = lazy(() => import('./components/Modal/Modal'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
 
+
 function App() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
-    <>
+  <I18nextProvider i18n={i18n} defaultNS={'translation'}>
       <div className='home'>
         <Navbar t={t} i18n={i18n} />
         <div className='sections'>
@@ -22,13 +24,13 @@ function App() {
           </Suspense>
         </div>
       </div>
-    </>
+    </I18nextProvider>
   );
 }
 
 export default function WrappedApp() {
   return (
-    <Suspense fallback="loading...">
+    <Suspense>
       <App />
     </Suspense>
   )
