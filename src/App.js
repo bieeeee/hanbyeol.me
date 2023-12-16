@@ -12,7 +12,7 @@ function App() {
     // <div className='home'>
     //   <page />
     // </div>
-    <Page>
+    <page>
     <div className='home'>
       <Navbar t={t} i18n={i18n} />
       <div className='sections'>
@@ -25,7 +25,7 @@ function App() {
         </Suspense>
       </div>
     </div>
-  </Page>
+  </page>
   );
 }
 
