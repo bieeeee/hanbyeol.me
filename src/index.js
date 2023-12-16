@@ -6,7 +6,5 @@ import './App.css';
 import i18n from './i18n';
 
 ReactDOM.hydrate(
-  <I18nextProvider i18n={i18n} defaultNS={'translation'}>
-    <WrappedApp />
-  </I18nextProvider>,
+    <WrappedApp />,
   document.getElementById('root'));

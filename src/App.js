@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import {useTranslation} from 'react-i18next';
 import Navbar from './components/Navbar/Navbar';
 import Terminal from './components/Terminal/Terminal';
@@ -8,8 +8,14 @@ const Contact = lazy(() => import('./components/Contact/Contact'));
 
 function App() {
   const { t, i18n, ready } = useTranslation();
+  useEffect(() => {
+  }, [ready])
+
+  if (!ready) {
+    return null;
+  }
+
   return (
-    ready ?
     <div className='home'>
       <Navbar t={t} i18n={i18n} />
       <div className='sections'>
@@ -22,15 +28,13 @@ function App() {
         </Suspense>
       </div>
     </div>
-    :
-    <div>loading...</div>
   );
 }
 
 export default function WrappedApp() {
   return (
-    <Suspense fallback="loading...">
+    // <Suspense fallback="loading...">
       <App />
-    </Suspense>
+    // </Suspense>
   )
 };
