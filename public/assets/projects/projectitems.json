@@ -28,5 +28,5 @@
     "title": "Hanbyeol-v2",
     "desc": "Second iteration of my portfolio website.",
     "stack": ["Next(page)", "TypeScript", "TailwindCSS", "Framer-motion"]
-  },
+  }
 ]
