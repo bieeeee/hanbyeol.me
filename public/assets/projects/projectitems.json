@@ -3,30 +3,30 @@
     "id": 1,
     "title": "Plan For You",
     "desc": "Seating chart generator utilizing guests' preferences selected via personalized invitations.",
-    "stack": ["Rails", "PostgreSQL", "Bootstrap"],
+    "stack": ["Rails", "PostgreSQL", "Bootstrap"]
   },
     {
     "id": 2,
     "title": "OnlyDevs",
     "desc": "Platform web application that connects junior and senior developers to facilitate networking and career guidance. 2023 Ruby on Rails hackathon project.",
-    "stack": ["Rails", "PostgreSQL", "TailwindCSS"],
+    "stack": ["Rails", "PostgreSQL", "TailwindCSS"]
   },
     {
     "id": 3,
     "title": "Zapfit",
     "desc": "Freelance project for a personal training business initially built with RoR and PostgreSQL. Later rebuilt with the MERN stack due to PostgreSQL costs on Heroku.",
-    "stack": ["Node", "Express", "MongoDB", "React"],
+    "stack": ["Node", "Express", "MongoDB", "React"]
   },
   {
     "id": 4,
     "title": "Hanbyeol-v1",
     "desc": "My first portfolio website with a Windows 97 theme. I initially began with Create React App but later incorporated ExpressJS for server-side rendering.",
-    "stack": ["React", "Express"],
+    "stack": ["React", "Express"]
   },
   {
     "id": 5,
     "title": "Hanbyeol-v2",
     "desc": "Second iteration of my portfolio website.",
-    "stack": ["Next(page)", "TypeScript", "TailwindCSS", "Framer-motion"],
+    "stack": ["Next(page)", "TypeScript", "TailwindCSS", "Framer-motion"]
   },
 ]
