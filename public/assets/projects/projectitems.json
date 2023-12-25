@@ -1,10 +1,4 @@
-[
-  {
-    "id": 1,
-    "title": "Plan For You",
-    "desc": "Seating chart generator utilizing guests' preferences selected via personalized invitations.",
-    "stack": ["Rails", "PostgreSQL", "Bootstrap"]
-  },
+[{"id": 1,"title":"Plan For You","desc": "Seating chart generator utilizing guests' preferences selected via personalized invitations.","stack": ["Rails", "PostgreSQL", "Bootstrap"]},
     {
     "id": 2,
     "title": "OnlyDevs",
