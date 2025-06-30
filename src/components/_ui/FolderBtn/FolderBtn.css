@@ -1,0 +1,9 @@
+.btn-modal {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  line-height: 16px;
+}
