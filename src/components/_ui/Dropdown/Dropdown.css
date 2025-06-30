@@ -1,14 +1,25 @@
+.dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.spacing {
+  height: 0.2rem;
+  width: 100px;
+}
+
 .dropdown-menu {
   background: #c0c0c0;
   width: 200px;
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 38px;
+  top: 100%;
   left: 3px;
   list-style: none;
   text-align: start;
-  z-index: 5;
+  z-index: 20;
   border-top: 2px solid white;
   border-right: 2px solid #5b5b5b;
   border-bottom: 2px solid #5b5b5b;
