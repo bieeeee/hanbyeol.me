@@ -1,16 +1,21 @@
 * {
   box-sizing: border-box;
-  font-family: 'NeoDunggeunmo Pro';
+  font-family: "NeoDunggeunmo Pro";
   font-display: swap;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 body {
   margin: 0;
   padding: 0;
-  top: 40px;
+  top: 2.5rem;
   height: 100vh;
+  width: 100vw;
+}
+
+button {
+  all: unset;
 }
 
 p {
@@ -18,9 +23,14 @@ p {
 }
 
 .sections {
-  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #5d9fff 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
   width: 100%;
-  height: calc(100vh - 41px);
+  height: calc(100vh - 2.5625rem);
   position: relative;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
@@ -28,6 +38,29 @@ p {
   scrollbar-width: none;
 }
 
-.sections::-webkit-scrollbar{
+.sections::-webkit-scrollbar {
   display: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.3438rem 0.5rem;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border-top: 0.125rem solid white;
+  border-right: 0.125rem solid #5b5b5b;
+  border-bottom: 0.125rem solid #5b5b5b;
+  border-left: 0.125rem solid white;
+}
+
+.btn:hover,
+.btn.clicked {
+  color: white;
+  border-top: 0.125rem solid #5b5b5b;
+  border-right: 0.125rem solid white;
+  border-bottom: 0.125rem solid white;
+  border-left: 0.125rem solid #5b5b5b;
 }
