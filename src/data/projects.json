@@ -1,19 +1,96 @@
 {
-  "projects": [
+  "professional": [
     {
-      "title": "Varchar For You",
-      "desc": "Varchar for you is a character rental service web application that connects clients with a diverse catalog of characters for their events. From birthday parties to corporate functions, clients can easily browse, book, and bring a touch of magic to their occasions with a seamless and personalized experience.",
+      "index": 0,
+      "title": "LG Smart TV Overlay App",
+      "desc": [""],
       "stacks": [
-        "Ruby On Rails",
-        "Javascript",
-        "PostgreSQL",
-        "SCSS",
-        "Bootstrap"
+        "Svelte",
+        "Typescript",
+        "Tanstack-query",
+        "webOSTV.js"
       ],
-      "gh": "https://github.com/bieeeee/Varchar",
+      "year": "2025",
+      "client": "LG"
+    },
+    {
+      "index": 1,
+      "title": "SuperSign Cloud",
+      "desc": [""],
+      "stacks": [
+        "React",
+        "Typescript",
+        "Tanstack-query",
+        "Zod",
+        "Zustand"
+      ],
+      "year": "2025",
+      "client": "LG"
+    },
+    {
+      "index": 2,
+      "title": "Procentric Cloud",
+      "desc": [""],
+      "stacks": [
+        "React",
+        "Typescript",
+        "Tanstack-query",
+        "Zod",
+        "Zustand"
+      ],
+      "year": "2024",
+      "client": "LG"
+    },
+    {
+      "index": 3,
+      "title": "LATS",
+      "desc": [""],
+      "stacks": ["Next.js, Typescript"],
+      "year": "2024",
+      "client": "LG HVAC"
+    },
+    {
+      "index": 4,
+      "title": "Automobile Infotainment System",
+      "desc": "As a project assigned by government, I participated as a UX designer, researching, developing System flow and UX Scenario.",
+      "stacks": ["UX"],
+      "year": "2024",
+      "client": "Government project"
+    }
+  ],
+  "personal": [
+    {
+      "index": 5,
+      "title": "Hanbyeol.me",
+      "desc": "My personal website that keeps history of my numerous mistakes, errors, and progress",
+      "stacks": ["React", "Typescript"],
+      "gh": "https://github.com/bieeeee/hanbyeol.me",
+      "year": "2023 ~ present"
+    },
+    {
+      "index": 6,
+      "title": "OnlyDevs(Rails hackathon 2023)",
+      "desc": "OnlyDevs is a platform to connect junior/senior developers for career guidance. The app provides filters for users to find developers nearby, preferred work experience and discipline. They can view a profile and leave questions for interaction.",
+      "stacks": ["Ruby On Rails", "Javascript", "Tailwind"],
+      "gh": "https://github.com/bieeeee/onlydevs",
       "year": 2023
     },
     {
+      "index": 7,
+      "title": "Booking.com",
+      "desc": "A full-stack booking.com clone.",
+      "stacks": [
+        "Node.js",
+        "Express",
+        "React",
+        "MongoDB",
+        "SCSS"
+      ],
+      "gh": "https://github.com/bieeeee/booking-app",
+      "year": 2023
+    },
+    {
+      "index": 8,
       "title": "Plan For You",
       "desc": "The app automatically creates a seating chart by enabling guests to select their preferred seating partners through personalized invitation emails. This ensures a seamless and enjoyable experience for all guests.",
       "stacks": [
@@ -28,83 +105,18 @@
       "year": 2023
     },
     {
-      "title": "Booking.com",
-      "desc": "A full-stack booking.com clone.",
+      "index": 9,
+      "title": "Varchar For You",
+      "desc": "Varchar for you is a character rental service web application that connects clients with a diverse catalog of characters for their events. From birthday parties to corporate functions, clients can easily browse, book, and bring a touch of magic to their occasions with a seamless and personalized experience.",
       "stacks": [
-        "Node.js",
-        "Express",
-        "React",
-        "MongoDB",
-        "SCSS"
+        "Ruby On Rails",
+        "Javascript",
+        "PostgreSQL",
+        "SCSS",
+        "Bootstrap"
       ],
-      "gh": "https://github.com/bieeeee/booking-app",
+      "gh": "https://github.com/bieeeee/Varchar",
       "year": 2023
-    },
-    {
-      "title": "OnlyDevs(Rails hackathon 2023)",
-      "desc": "OnlyDevs is a platform to connect junior/senior developers for career guidance. The app provides filters for users to find developers nearby, preferred work experience and discipline. They can view a profile and leave questions for interaction.",
-      "stacks": ["Ruby On Rails", "Javascript", "Tailwind"],
-      "gh": "https://github.com/bieeeee/onlydevs",
-      "year": 2023
-    },
-    {
-      "title": "Hanbyeol.me",
-      "desc": "My personal website that keeps history of my numerous mistakes, errors, and progress",
-      "stacks": ["React", "Typescript"],
-      "gh": "https://github.com/bieeeee/hanbyeol.me",
-      "year": "2023 ~ present"
-    },
-    {
-      "title": "Automobile Infotainment System",
-      "desc": "As a project assigned by government, I participated as a UX designer, researching, developing System flow and UX Scenario.",
-      "stacks": ["UX"],
-      "year": "2024.02 ~ 2024.04",
-      "client": "Government project"
-    },
-    {
-      "title": "LATS",
-      "desc": [""],
-      "stacks": ["Next.js, Typescript"],
-      "year": "2024.04",
-      "client": "LG HVAC"
-    },
-    {
-      "title": "Procentric Cloud",
-      "desc": [""],
-      "stacks": [
-        "React",
-        "Typescript",
-        "Tanstack-query",
-        "Zod",
-        "Zustand"
-      ],
-      "year": "2024.05 ~ 2025.02",
-      "client": "LG"
-    },
-    {
-      "title": "SuperSign Cloud",
-      "desc": [""],
-      "stacks": [
-        "React",
-        "Typescript",
-        "Tanstack-query",
-        "Zod",
-        "Zustand"
-      ],
-      "year": "2025.01 ~ present",
-      "client": "LG"
-    },
-    {
-      "title": "LG Smart TV Overlay App",
-      "desc": [""],
-      "stacks": [
-        "Svelte",
-        "Typescript",
-        "Tanstack-query",
-        "webOSTV.js"
-      ],
-      "year": "2025.03 ~ present",
-      "client": "LG"
     }
   ]
 }

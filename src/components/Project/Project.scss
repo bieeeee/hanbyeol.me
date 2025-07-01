@@ -1,0 +1,97 @@
+.title-box {
+  display: flex;
+  background-color: #d4d4d4;
+  padding-bottom: 4px;
+  gap: 0.625rem;
+
+  span {
+    padding: 0 4px;
+    @include win95-border-inset();
+  }
+
+  span:first-child {
+    flex: 0.4;
+  }
+
+  span:last-child {
+    flex: 0.6;
+  }
+}
+
+.projects-container {
+  height: calc(100% - 1.5rem);
+  display: flex;
+  gap: 0.625rem;
+  background-color: #d4d4d4;
+
+  .project-explorer {
+    padding: 0.25rem;
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    background-color: #fff;
+    overflow-y: auto;
+    @include win95-border-inset();
+
+    .project-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .project-subgroup {
+      position: relative;
+      margin-left: 1rem;
+
+      &::before {
+        @include vertical-line(
+          -0.5rem,
+          -0.3rem,
+          -0.6875rem
+        );
+      }
+
+      &::after {
+        @include horizontal-connector();
+      }
+
+      &:last-child::before {
+        background-color: transparent;
+      }
+
+      .folder-btn,
+      .file-btn {
+        position: relative;
+      }
+
+      .file-btn {
+        margin-left: 1rem;
+
+        &::before {
+          @include vertical-line();
+        }
+
+        &::after {
+          @include horizontal-connector();
+        }
+      }
+
+      ul {
+        li:last-child .file-btn {
+          &::before {
+            @include vertical-line(-0.5rem, 0, 0, 9px);
+          }
+        }
+      }
+    }
+  }
+
+  .project-detail-panel {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    @include win95-border-inset();
+  }
+}
