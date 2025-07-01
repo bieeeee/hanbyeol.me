@@ -1,4 +1,5 @@
 import React from "react";
+import "./CloseBtn.scss";
 
 interface CloseBtnProps {
   onClick: () => void;
@@ -10,9 +11,9 @@ const CloseBtn: React.FC<CloseBtnProps> = ({
   style
 }) => {
   return (
-    <button onClick={onClick} className="close-btn">
+    <button onClick={onClick} className="btn close-btn">
       <img
-        src="assets/icons/close.png"
+        src="/src/assets/icons/close.png"
         alt="close"
         style={{ ...style }}
       />

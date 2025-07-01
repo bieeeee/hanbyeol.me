@@ -2,20 +2,24 @@
   position: relative;
   display: inline-flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .spacing {
+  width: 12.5rem;
   height: 0.2rem;
-  width: 100px;
+  position: absolute;
+  top: 100%;
 }
 
 .dropdown-menu {
   background: #c0c0c0;
-  width: 200px;
+  width: 12.5rem;
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 0.2rem);
   left: 3px;
   list-style: none;
   text-align: start;

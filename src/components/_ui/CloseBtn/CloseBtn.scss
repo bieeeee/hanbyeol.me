@@ -1,0 +1,13 @@
+.close-btn {
+  height: calc(100% - 0.9375rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.1875rem;
+  padding: 0.1563rem;
+}
+
+.close-btn img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
