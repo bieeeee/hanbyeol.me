@@ -1,0 +1,18 @@
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 0.625rem;
+}
+
+.skill-logo {
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skill-logo img {
+  height: 2.6875rem;
+  width: auto;
+  margin-bottom: 0.25rem;
+}

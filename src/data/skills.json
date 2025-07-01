@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Javascript",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "language"
+  },
+  {
+    "name": "Typescript",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "language"
+  },
+  {
+    "name": "Axios",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "library"
+  },
+  {
+    "name": "Next.js",
+    "icon": "/src/assets/icons/react.png",
+    "type": "framework"
+  },
+  {
+    "name": "React",
+    "icon": "/src/assets/icons/react.png",
+    "type": "framework"
+  },
+  {
+    "name": "Ruby On Rails",
+    "icon": "/src/assets/icons/rails.png",
+    "style": {
+      "whiteSpace": "nowrap"
+    },
+    "type": "framework"
+  },
+  {
+    "name": "Svelte",
+    "icon": "/src/assets/icons/react.png",
+    "type": "framework"
+  },
+  {
+    "name": "Tanstack-query",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "library"
+  },
+  {
+    "name": "webOSTV.js",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "library"
+  },
+  {
+    "name": "Zod",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "library"
+  },
+  {
+    "name": "Zustand",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "library"
+  },
+  {
+    "name": "Git",
+    "icon": "/src/assets/icons/git.png",
+    "type": "tool"
+  },
+  {
+    "name": "Postman",
+    "icon": "/src/assets/icons/insomnia.svg",
+    "type": "tool"
+  },
+  {
+    "name": "Vite",
+    "icon": "/src/assets/icons/javascript.png",
+    "type": "tool"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "/src/assets/icons/mongodb.png",
+    "type": "database"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "/src/assets/icons/postgresql.png",
+    "type": "database"
+  },
+  {
+    "name": "MUI",
+    "icon": "/src/assets/icons/bootstrap.png",
+    "type": "style"
+  },
+  {
+    "name": "Sass",
+    "icon": "/src/assets/icons/scss.png",
+    "type": "style"
+  },
+  {
+    "name": "Tailwind",
+    "icon": "/src/assets/icons/tailwind.png",
+    "style": {
+      "padding": "5px"
+    },
+    "type": "style"
+  }
+]
