@@ -1,0 +1,13 @@
+@mixin win95-border() {
+  border-top: 0.125rem solid #fff;
+  border-left: 0.125rem solid #fff;
+  border-right: 0.125rem solid #464545;
+  border-bottom: 0.125rem solid #464545;
+}
+
+@mixin win95-border-inset() {
+  border-top: 0.125rem solid #464545;
+  border-left: 0.125rem solid #464545;
+  border-right: 0.125rem solid #fff;
+  border-bottom: 0.125rem solid #fff;
+}

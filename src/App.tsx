@@ -1,10 +1,10 @@
 import "./i18n";
-import "./App.css";
+import "./App.scss";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
-import { Navbar } from "@components";
+import { Navbar, Terminal } from "@components";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
     >
       <main>
         <Navbar />
+        <Terminal />
       </main>
     </I18nextProvider>
   );
