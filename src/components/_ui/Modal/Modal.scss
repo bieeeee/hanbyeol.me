@@ -15,10 +15,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 37.5rem;
-  min-width: 18.75rem;
+  width: 60vw;
+  height: 55vh;
   padding: 0.3125rem;
   background-color: #d4d4d4;
+  overflow: hidden;
   @include win95-border();
 }
 
@@ -48,10 +49,7 @@
 }
 
 .modal-content {
-  height: fit-content;
-  border: 1px solid black;
+  height: calc(100% - 1.875rem);
   background-color: white;
   color: black;
-  overflow: hidden;
-  @include win95-border-inset();
 }

@@ -5,3 +5,4 @@ export { default as Modal } from "./_ui/Modal/Modal";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as Terminal } from "./Terminal/Terminal";
 export { default as Skill } from "./Skill/Skill";
+export { default as Project } from "./Project/Project";
