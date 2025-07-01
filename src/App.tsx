@@ -4,7 +4,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
-import { Navbar, Skill, Terminal } from "@components";
+import {
+  Navbar,
+  Project,
+  Skill,
+  Terminal
+} from "@components";
 
 function App() {
   return (
@@ -14,8 +19,11 @@ function App() {
     >
       <main>
         <Navbar />
-        <Terminal />
-        <Skill />
+        <div className="main-container">
+          <Terminal />
+          <Skill />
+          <Project />
+        </div>
       </main>
     </I18nextProvider>
   );
