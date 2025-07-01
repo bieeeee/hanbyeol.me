@@ -5,9 +5,39 @@
   border-bottom: 0.125rem solid #464545;
 }
 
-@mixin win95-border-inset() {
-  border-top: 0.125rem solid #464545;
-  border-left: 0.125rem solid #464545;
-  border-right: 0.125rem solid #fff;
-  border-bottom: 0.125rem solid #fff;
+@mixin win95-border-inset($thickness: 0.125rem) {
+  border-top: $thickness solid #464545;
+  border-left: $thickness solid #464545;
+  border-right: $thickness solid #fff;
+  border-bottom: $thickness solid #fff;
+}
+
+@mixin vertical-line(
+  $left: -0.5rem,
+  $top: 0,
+  $bottom: 0,
+  $height: auto
+) {
+  content: "";
+  position: absolute;
+  left: $left;
+  top: $top;
+  bottom: $bottom;
+  height: $height;
+  width: 1px;
+  background-color: #c5c5c5;
+}
+
+@mixin horizontal-connector(
+  $left: -0.5rem,
+  $top: 0.5rem,
+  $width: 0.7rem
+) {
+  content: "";
+  position: absolute;
+  left: $left;
+  top: $top;
+  width: $width;
+  height: 1px;
+  background-color: #c5c5c5;
 }
