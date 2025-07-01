@@ -1,5 +1,5 @@
 export { default as CloseBtn } from "./_ui/CloseBtn/CloseBtn";
-export { default as FolderBtn } from "./_ui/FolderBtn/FolderBtn";
+export { default as IconBtn } from "./_ui/IconBtn/IconBtn";
 export { default as DropDown } from "./_ui/Dropdown/Dropdown";
 export { default as Modal } from "./_ui/Modal/Modal";
 export { default as Navbar } from "./Navbar/Navbar";
