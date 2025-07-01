@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { DropDown } from "@components";
-import "./Navbar.css";
+import "./Navbar.scss";
 
 const locales = [
   { lang: "ko", title: "KO" },
