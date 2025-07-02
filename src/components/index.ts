@@ -6,3 +6,5 @@ export { default as Navbar } from "./Navbar/Navbar";
 export { default as Terminal } from "./Terminal/Terminal";
 export { default as Skill } from "./Skill/Skill";
 export { default as Project } from "./Project/Project";
+export { default as SubFolder } from "./Project/SubFolder";
+export { default as ProjectDetail } from "./Project/ProjectDetail";

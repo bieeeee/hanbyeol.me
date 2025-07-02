@@ -1,69 +1,33 @@
 import React, { useState } from "react";
-import projectsData from "@/data/projects.json";
-import { IconBtn, Modal } from "@components";
-import "./Project.scss";
 import { useTranslation } from "react-i18next";
-
-const SubFolder = ({ year, projects }) => {
-  const [isActive, setIsActive] = useState(false);
-  const sectionId = `projects-${year}`;
-
-  return (
-    <div className="project-subgroup" data-open={isActive}>
-      <IconBtn
-        title={year}
-        imgSrc={`/src/assets/icons/${isActive ? "folder" : "folder-open"}.png`}
-        onClick={() => setIsActive(!isActive)}
-        isHorizontal
-        size="sm"
-        customClass="folder-btn"
-        aria-expanded={isActive}
-        aria-controls={sectionId}
-      />
-      {isActive && (
-        <ul id={sectionId}>
-          {projects.map((project) => (
-            <li key={project.title}>
-              <IconBtn
-                title={project.title}
-                imgSrc="/src/assets/icons/rich-text.png"
-                onClick={() => {}}
-                isHorizontal
-                size="sm"
-                customClass="file-btn"
-              />
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-};
+import {
+  IconBtn,
+  Modal,
+  ProjectDetail,
+  SubFolder
+} from "@components";
+import { groupByYear } from "@/utils/projectUtils";
+import { Project as ProjectType } from "@/types/project";
+import projectsData from "@/data/projects.json";
+import "./Project.scss";
 
 const Project: React.FC = () => {
   const { t } = useTranslation();
-
-  const groupByYear = (projects) => {
-    const grouped = projects.reduce((acc, project) => {
-      const year = project.year;
-      if (!acc[year]) acc[year] = [];
-      acc[year].push(project);
-      return acc;
-    }, {});
-
-    return Object.entries(grouped).sort(
-      ([a], [b]) => Number(b) - Number(a)
-    );
-  };
+  const [activeProject, setActiveProject] =
+    useState<ProjectType | null>(null);
 
   return (
-    <Modal title={t("modal.projects")}>
+    <Modal
+      title={t("modal.projects")}
+      onClose={() => setActiveProject(null)}
+    >
       <div className="title-box">
-        <span>All Folders</span>
-        <span>Contents of </span>
+        <span>All Projects</span>
+        <span>Contents of {activeProject?.title}</span>
       </div>
+
       <div className="projects-container">
-        <div className="project-explorer" role="tree">
+        <nav className="project-explorer" role="tree">
           {Object.entries(projectsData).map(
             ([folderKey, projects]) => (
               <div
@@ -79,22 +43,28 @@ const Project: React.FC = () => {
                   size="sm"
                 />
                 {groupByYear(projects).map(
-                  ([year, projectsByYear]) => (
+                  ([year, projectsInYear]) => (
                     <SubFolder
                       key={year}
                       year={year}
-                      projects={projectsByYear}
+                      projects={projectsInYear}
+                      setActiveProject={setActiveProject}
                     />
                   )
                 )}
               </div>
             )
           )}
-        </div>
-        <div
+        </nav>
+
+        <section
           className="project-detail-panel"
           aria-live="polite"
-        />
+        >
+          {activeProject && (
+            <ProjectDetail project={activeProject} />
+          )}
+        </section>
       </div>
     </Modal>
   );

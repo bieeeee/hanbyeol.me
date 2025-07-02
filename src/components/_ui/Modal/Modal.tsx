@@ -6,6 +6,7 @@ interface ModalProps {
   title: string;
   defaultOpen?: boolean;
   triggerImg?: string;
+  onClose?: () => void;
   children: React.ReactNode;
 }
 
@@ -13,9 +14,15 @@ const Modal: React.FC<ModalProps> = ({
   title,
   defaultOpen,
   triggerImg,
+  onClose,
   children
 }) => {
   const [open, setOpen] = useState(defaultOpen ?? false);
+
+  const handleClose = () => {
+    setOpen(false);
+    onClose?.();
+  };
 
   return (
     <>
@@ -41,7 +48,7 @@ const Modal: React.FC<ModalProps> = ({
                   />
                   <p>{title}</p>
                 </div>
-                <CloseBtn onClick={() => setOpen(false)} />
+                <CloseBtn onClick={handleClose} />
               </div>
               <div className="modal-content">
                 {children}

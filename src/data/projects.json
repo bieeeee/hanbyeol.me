@@ -1,7 +1,7 @@
 {
   "professional": [
     {
-      "index": 0,
+      "id": "overlay",
       "title": "LG Smart TV Overlay App",
       "desc": [""],
       "stacks": [
@@ -11,10 +11,11 @@
         "webOSTV.js"
       ],
       "year": "2025",
-      "client": "LG"
+      "client": "LG",
+      "img": ""
     },
     {
-      "index": 1,
+      "id": "ssc",
       "title": "SuperSign Cloud",
       "desc": [""],
       "stacks": [
@@ -28,7 +29,7 @@
       "client": "LG"
     },
     {
-      "index": 2,
+      "id": "pcc",
       "title": "Procentric Cloud",
       "desc": [""],
       "stacks": [
@@ -42,7 +43,7 @@
       "client": "LG"
     },
     {
-      "index": 3,
+      "id": "lats",
       "title": "LATS",
       "desc": [""],
       "stacks": ["Next.js, Typescript"],
@@ -50,8 +51,8 @@
       "client": "LG HVAC"
     },
     {
-      "index": 4,
-      "title": "Automobile Infotainment System",
+      "id": "ais",
+      "title": "Automobile Cloud Control System",
       "desc": "As a project assigned by government, I participated as a UX designer, researching, developing System flow and UX Scenario.",
       "stacks": ["UX"],
       "year": "2024",
@@ -60,7 +61,7 @@
   ],
   "personal": [
     {
-      "index": 5,
+      "id": "ais",
       "title": "Hanbyeol.me",
       "desc": "My personal website that keeps history of my numerous mistakes, errors, and progress",
       "stacks": ["React", "Typescript"],
@@ -68,15 +69,15 @@
       "year": "2023 ~ present"
     },
     {
-      "index": 6,
+      "id": "ais",
       "title": "OnlyDevs(Rails hackathon 2023)",
       "desc": "OnlyDevs is a platform to connect junior/senior developers for career guidance. The app provides filters for users to find developers nearby, preferred work experience and discipline. They can view a profile and leave questions for interaction.",
       "stacks": ["Ruby On Rails", "Javascript", "Tailwind"],
       "gh": "https://github.com/bieeeee/onlydevs",
-      "year": 2023
+      "year": "2023"
     },
     {
-      "index": 7,
+      "id": "ais",
       "title": "Booking.com",
       "desc": "A full-stack booking.com clone.",
       "stacks": [
@@ -87,10 +88,10 @@
         "SCSS"
       ],
       "gh": "https://github.com/bieeeee/booking-app",
-      "year": 2023
+      "year": "2023"
     },
     {
-      "index": 8,
+      "id": "ais",
       "title": "Plan For You",
       "desc": "The app automatically creates a seating chart by enabling guests to select their preferred seating partners through personalized invitation emails. This ensures a seamless and enjoyable experience for all guests.",
       "stacks": [
@@ -102,10 +103,10 @@
       ],
       "gh": "https://github.com/bieeeee/PLAN4U",
       "demo": "https://youtu.be/3jZFHTANuRQ?t=1766",
-      "year": 2023
+      "year": "2023"
     },
     {
-      "index": 9,
+      "id": "ais",
       "title": "Varchar For You",
       "desc": "Varchar for you is a character rental service web application that connects clients with a diverse catalog of characters for their events. From birthday parties to corporate functions, clients can easily browse, book, and bring a touch of magic to their occasions with a seamless and personalized experience.",
       "stacks": [
@@ -116,7 +117,7 @@
         "Bootstrap"
       ],
       "gh": "https://github.com/bieeeee/Varchar",
-      "year": 2023
+      "year": "2023"
     }
   ]
 }

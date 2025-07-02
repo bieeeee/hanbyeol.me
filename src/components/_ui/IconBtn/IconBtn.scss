@@ -13,11 +13,10 @@
 }
 
 .icon-btn.horizontal {
-  width: 100%;
+  width: -webkit-fill-available;
   flex-direction: row;
 
   p {
-    width: 70%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
