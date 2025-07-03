@@ -1,8 +1,11 @@
 .skills-container {
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   padding: 0.625rem;
+  overflow-y: auto;
+  @include win95-border-inset;
 }
 
 .skill-logo {
