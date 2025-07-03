@@ -1,9 +1,11 @@
 {
-  "professional": [
+  "projects.prof": [
     {
       "id": "ssc",
       "title": "LG SuperSign Cloud",
-      "desc": ["Digital signage management"],
+      "desc": [
+        "Digital signage management platform for monitoring and controlling displays across multiple locations"
+      ],
       "stacks": [
         "React",
         "Typescript",
@@ -18,7 +20,9 @@
     {
       "id": "pcc",
       "title": "LG Procentric Cloud",
-      "desc": ["A hotel content management system"],
+      "desc": [
+        "Hotel content management system with property management and guest service features"
+      ],
       "stacks": [
         "React",
         "Typescript",
@@ -33,26 +37,36 @@
     {
       "id": "lats",
       "title": "LG Air Conditioning Technologies",
-      "desc": ["Energy estimation program"],
-      "stacks": ["Next.js, Typescript, Tailwind CSS"],
+      "desc": [
+        "Energy estimation program for calculating HVAC system efficiency and costs"
+      ],
+      "stacks": ["Next.js", "Typescript", "Tailwind CSS"],
       "year": "2024",
       "client": "LG"
     },
     {
       "id": "accs",
       "title": "Automobile Cloud Control System",
-      "desc": "Participated in government-funded research project as UX designer, conducting user research and developing system flows and UX scenarios.",
+      "desc": [
+        "Government research project for connected vehicle systems, focusing on user experience design and system workflows"
+      ],
       "stacks": ["Draw.io", "User Research", "Wireframing"],
       "year": "2024",
       "client": "government"
     }
   ],
-  "personal": [
+  "projects.personal": [
     {
       "id": "me",
       "title": "Hanbyeol.me",
       "desc": "My personal website that keeps history of my numerous mistakes, errors, and progress",
-      "stacks": ["React", "Typescript", "Vite"],
+      "stacks": [
+        "React",
+        "Typescript",
+        "Vite",
+        "S3",
+        "CloudFront"
+      ],
       "gh": "https://github.com/bieeeee/hanbyeol.me",
       "year": "2025"
     },
