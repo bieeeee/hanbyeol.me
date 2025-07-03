@@ -5,4 +5,5 @@ export interface Project {
   stacks: string[];
   year: string;
   client?: string;
+  gh?: string;
 }

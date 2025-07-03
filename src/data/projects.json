@@ -1,75 +1,63 @@
 {
   "professional": [
     {
-      "id": "overlay",
-      "title": "LG Smart TV Overlay App",
-      "desc": [""],
-      "stacks": [
-        "Svelte",
-        "Typescript",
-        "Tanstack-query",
-        "webOSTV.js"
-      ],
-      "year": "2025",
-      "client": "LG",
-      "img": ""
-    },
-    {
       "id": "ssc",
-      "title": "SuperSign Cloud",
-      "desc": [""],
+      "title": "LG SuperSign Cloud",
+      "desc": ["Digital signage management"],
       "stacks": [
         "React",
         "Typescript",
-        "Tanstack-query",
+        "TanStack Query",
         "Zod",
-        "Zustand"
+        "Zustand",
+        "React DnD"
       ],
       "year": "2025",
       "client": "LG"
     },
     {
       "id": "pcc",
-      "title": "Procentric Cloud",
-      "desc": [""],
+      "title": "LG Procentric Cloud",
+      "desc": ["A hotel content management system"],
       "stacks": [
         "React",
         "Typescript",
         "Tanstack-query",
         "Zod",
-        "Zustand"
+        "Zustand",
+        "Chart.js"
       ],
       "year": "2024",
       "client": "LG"
     },
     {
       "id": "lats",
-      "title": "LATS",
-      "desc": [""],
-      "stacks": ["Next.js, Typescript"],
+      "title": "LG Air Conditioning Technologies",
+      "desc": ["Energy estimation program"],
+      "stacks": ["Next.js, Typescript, Tailwind CSS"],
       "year": "2024",
-      "client": "LG HVAC"
+      "client": "LG"
     },
     {
-      "id": "ais",
+      "id": "accs",
       "title": "Automobile Cloud Control System",
-      "desc": "As a project assigned by government, I participated as a UX designer, researching, developing System flow and UX Scenario.",
-      "stacks": ["UX"],
+      "desc": "Participated in government-funded research project as UX designer, conducting user research and developing system flows and UX scenarios.",
+      "stacks": ["Draw.io", "User Research", "Wireframing"],
       "year": "2024",
-      "client": "Government project"
+      "client": "government"
     }
   ],
   "personal": [
     {
-      "id": "ais",
+      "id": "me",
       "title": "Hanbyeol.me",
       "desc": "My personal website that keeps history of my numerous mistakes, errors, and progress",
-      "stacks": ["React", "Typescript"],
+      "stacks": ["React", "Typescript", "Vite"],
       "gh": "https://github.com/bieeeee/hanbyeol.me",
-      "year": "2023 ~ present"
+      "year": "2025"
     },
     {
-      "id": "ais",
+      "id": "onlydevs",
       "title": "OnlyDevs(Rails hackathon 2023)",
       "desc": "OnlyDevs is a platform to connect junior/senior developers for career guidance. The app provides filters for users to find developers nearby, preferred work experience and discipline. They can view a profile and leave questions for interaction.",
       "stacks": ["Ruby On Rails", "Javascript", "Tailwind"],
@@ -77,7 +65,7 @@
       "year": "2023"
     },
     {
-      "id": "ais",
+      "id": "booking",
       "title": "Booking.com",
       "desc": "A full-stack booking.com clone.",
       "stacks": [
@@ -91,7 +79,7 @@
       "year": "2023"
     },
     {
-      "id": "ais",
+      "id": "plan",
       "title": "Plan For You",
       "desc": "The app automatically creates a seating chart by enabling guests to select their preferred seating partners through personalized invitation emails. This ensures a seamless and enjoyable experience for all guests.",
       "stacks": [
@@ -106,7 +94,7 @@
       "year": "2023"
     },
     {
-      "id": "ais",
+      "id": "varchar",
       "title": "Varchar For You",
       "desc": "Varchar for you is a character rental service web application that connects clients with a diverse catalog of characters for their events. From birthday parties to corporate functions, clients can easily browse, book, and bring a touch of magic to their occasions with a seamless and personalized experience.",
       "stacks": [
