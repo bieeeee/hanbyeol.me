@@ -1,32 +1,32 @@
 [
   {
     "name": "Javascript",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "https://cdn.simpleicons.org/javascript/F7DF1E",
     "type": "language"
   },
   {
     "name": "Typescript",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "https://cdn.simpleicons.org/typescript",
     "type": "language"
   },
   {
     "name": "Axios",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "https://cdn.simpleicons.org/axios",
     "type": "library"
   },
   {
     "name": "Next.js",
-    "icon": "/src/assets/icons/react.png",
+    "icon": "https://cdn.simpleicons.org/next.js",
     "type": "framework"
   },
   {
     "name": "React",
-    "icon": "/src/assets/icons/react.png",
+    "icon": "https://cdn.simpleicons.org/react",
     "type": "framework"
   },
   {
     "name": "Ruby On Rails",
-    "icon": "/src/assets/icons/rails.png",
+    "icon": "https://cdn.simpleicons.org/rubyonrails",
     "style": {
       "whiteSpace": "nowrap"
     },
@@ -34,67 +34,67 @@
   },
   {
     "name": "Svelte",
-    "icon": "/src/assets/icons/react.png",
+    "icon": "https://cdn.simpleicons.org/svelte",
     "type": "framework"
   },
   {
-    "name": "Tanstack-query",
-    "icon": "/src/assets/icons/javascript.png",
+    "name": "TanStack Query",
+    "icon": "https://cdn.simpleicons.org/reactquery",
     "type": "library"
   },
   {
     "name": "webOSTV.js",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "https://cdn.simpleicons.org/lg",
     "type": "library"
   },
   {
     "name": "Zod",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "https://cdn.simpleicons.org/zod",
     "type": "library"
   },
   {
     "name": "Zustand",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "https://docs.pmnd.rs/_next/static/media/zustand-icon.3261dd51.svg",
     "type": "library"
   },
   {
     "name": "Git",
-    "icon": "/src/assets/icons/git.png",
+    "icon": "https://cdn.simpleicons.org/git",
     "type": "tool"
   },
   {
     "name": "Postman",
-    "icon": "/src/assets/icons/insomnia.svg",
+    "icon": "https://cdn.simpleicons.org/postman",
     "type": "tool"
   },
   {
     "name": "Vite",
-    "icon": "/src/assets/icons/javascript.png",
+    "icon": "https://cdn.simpleicons.org/vite",
     "type": "tool"
   },
   {
     "name": "MongoDB",
-    "icon": "/src/assets/icons/mongodb.png",
+    "icon": "https://cdn.simpleicons.org/mongodb",
     "type": "database"
   },
   {
     "name": "PostgreSQL",
-    "icon": "/src/assets/icons/postgresql.png",
+    "icon": "https://cdn.simpleicons.org/postgresql",
     "type": "database"
   },
   {
     "name": "MUI",
-    "icon": "/src/assets/icons/bootstrap.png",
+    "icon": "https://cdn.simpleicons.org/mui",
     "type": "style"
   },
   {
     "name": "Sass",
-    "icon": "/src/assets/icons/scss.png",
+    "icon": "https://cdn.simpleicons.org/sass",
     "type": "style"
   },
   {
     "name": "Tailwind",
-    "icon": "/src/assets/icons/tailwind.png",
+    "icon": "https://cdn.simpleicons.org/tailwindcss",
     "style": {
       "padding": "5px"
     },
