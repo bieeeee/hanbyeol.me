@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { CloseBtn, IconBtn } from "@components";
+import { modalStore } from "@/stores/modalStore";
 import "./Modal.scss";
 
 interface ModalProps {
   title: string;
   defaultOpen?: boolean;
   triggerImg?: string;
+  open?: boolean;
+  setOpen?: (open: boolean) => void;
   onClose?: () => void;
   children: React.ReactNode;
 }
@@ -18,8 +21,16 @@ const Modal: React.FC<ModalProps> = ({
   children
 }) => {
   const [open, setOpen] = useState(defaultOpen ?? false);
+  const triggerIcon =
+    triggerImg ?? "/src/assets/icons/folder.png";
+
+  const handleOpen = () => {
+    modalStore.open(title, triggerIcon);
+    setOpen(true);
+  };
 
   const handleClose = () => {
+    modalStore.close();
     setOpen(false);
     onClose?.();
   };
@@ -27,10 +38,8 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <>
       <IconBtn
-        imgSrc={
-          triggerImg ?? "/src/assets/icons/folder.png"
-        }
-        onClick={() => setOpen(true)}
+        imgSrc={triggerIcon}
+        onClick={handleOpen}
         title={title}
       />
       {open && (
