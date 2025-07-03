@@ -15,12 +15,10 @@
     "linkedin": "링크드인",
     "github": "깃허브"
   },
-  "contact": {
-    "contactme": "문의하기",
-    "name": "성함",
-    "email": "이메일",
-    "message": "문의 내용",
-    "send": "전송"
-  },
-  "hello": "안녕하세요"
+  "projects": {
+    "all": "전체 프로젝트",
+    "contentOf": "{{name}}의 내용",
+    "prof": "실무 프로젝트",
+    "personal": "사이드 프로젝트"
+  }
 }

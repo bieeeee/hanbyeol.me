@@ -15,12 +15,10 @@
     "linkedin": "LinkedIn",
     "github": "Github"
   },
-  "contact": {
-    "contactme": "Contact me",
-    "name": "Your name",
-    "email": "Your email",
-    "message": "Message",
-    "send": "Send"
-  },
-  "hello": "hi"
+  "projects": {
+    "all": "All Projects",
+    "contentOf": "Content of {{name}}",
+    "prof": "Professional",
+    "personal": "Personal"
+  }
 }
