@@ -4,9 +4,9 @@
   },
   "navbar": {
     "start": "시작",
-    "about": "자기소개",
-    "projects": "프로젝트",
-    "contact": "문의"
+    "blog": "블로그",
+    "github": "깃허브",
+    "linkedin": "링크드인"
   },
   "modal": {
     "aboutme": "자기소개",
