@@ -23,7 +23,7 @@ const SubFolder: React.FC<SubFolderProps> = ({
     <div className="project-subgroup" data-open={isOpen}>
       <IconBtn
         title={year}
-        imgSrc={`/src/assets/icons/${isOpen ? "folder" : "folder-open"}.png`}
+        imgSrc={`src/assets/icons/${isOpen ? "folder" : "folder-open"}.png`}
         onClick={() => setIsOpen((prev) => !prev)}
         isHorizontal
         size="sm"
@@ -37,7 +37,7 @@ const SubFolder: React.FC<SubFolderProps> = ({
             <li key={project.title}>
               <IconBtn
                 title={project.title}
-                imgSrc="/src/assets/icons/rich-text.png"
+                imgSrc="src/assets/icons/rich-text.png"
                 onClick={() => setActiveProject(project)}
                 isHorizontal
                 size="sm"

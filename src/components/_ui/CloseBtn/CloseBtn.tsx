@@ -13,7 +13,7 @@ const CloseBtn: React.FC<CloseBtnProps> = ({
   return (
     <button onClick={onClick} className="btn close-btn">
       <img
-        src="/src/assets/icons/close.png"
+        src="src/assets/icons/close.png"
         alt="close"
         style={{ ...style }}
       />

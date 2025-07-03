@@ -35,7 +35,7 @@ const Dropdown: React.FC = () => {
     >
       <button className="btn">
         <img
-          src="/src/assets/icons/logo-icon.png"
+          src="src/assets/icons/logo-icon.png"
           alt="Logo"
           className="navbar-logo"
         />

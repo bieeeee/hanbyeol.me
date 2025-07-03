@@ -22,8 +22,12 @@ const Project: React.FC = () => {
       onClose={() => setActiveProject(null)}
     >
       <div className="title-box">
-        <span>All Projects</span>
-        <span>Contents of {activeProject?.title}</span>
+        <span>{t("projects.all")}</span>
+        <span>
+          {t("projects.contentOf", {
+            name: activeProject?.title
+          })}
+        </span>
       </div>
 
       <div className="projects-container">
@@ -35,8 +39,8 @@ const Project: React.FC = () => {
                 className="project-group"
               >
                 <IconBtn
-                  title={folderKey}
-                  imgSrc="/src/assets/icons/hard-drive.png"
+                  title={t(folderKey)}
+                  imgSrc="src/assets/icons/hard-drive.png"
                   onClick={() => {}}
                   isHorizontal
                   role="treeitem"

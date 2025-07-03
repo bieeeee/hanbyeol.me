@@ -22,7 +22,7 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   const [open, setOpen] = useState(defaultOpen ?? false);
   const triggerIcon =
-    triggerImg ?? "/src/assets/icons/folder.png";
+    triggerImg ?? "src/assets/icons/folder.png";
 
   const handleOpen = () => {
     modalStore.open(title, triggerIcon);
@@ -51,7 +51,7 @@ const Modal: React.FC<ModalProps> = ({
                   <img
                     src={
                       triggerImg ??
-                      "/src/assets/icons/folder-open.png"
+                      "src/assets/icons/folder-open.png"
                     }
                     alt="folder"
                   />
