@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 import { Modal } from "@components";
@@ -11,21 +11,23 @@ const Terminal: React.FC = () => {
     <Modal
       title={t("modal.aboutme")}
       defaultOpen
-      triggerImg="/src/assets/icons/prompt.png"
+      triggerImg="src/assets/icons/prompt.png"
     >
       <div className="terminal-content">
-        <TypeAnimation
-          key={i18n.language}
-          sequence={[t("terminal.desc"), 1000]}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-          speed={80}
-          style={{
-            whiteSpace: "pre-line",
-            display: "inline-block"
-          }}
-        />
+        <Suspense fallback="">
+          <TypeAnimation
+            key={i18n.language}
+            sequence={[t("terminal.desc"), 1000]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            speed={80}
+            style={{
+              whiteSpace: "pre-line",
+              display: "inline-block"
+            }}
+          />
+        </Suspense>
       </div>
     </Modal>
   );
