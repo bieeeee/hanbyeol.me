@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSignals } from "@preact/signals-react/runtime";
 import { DropDown } from "@components";
+import { modalStore } from "@/stores/modalStore";
 import "./Navbar.scss";
 
 const locales = [
@@ -9,11 +11,23 @@ const locales = [
 ];
 
 const Navbar: React.FC = () => {
+  useSignals();
   const { i18n } = useTranslation();
 
   return (
     <nav className="navbar">
-      <DropDown />
+      <div className="left-container">
+        <DropDown />
+        {modalStore.isOpen.value && (
+          <button className="btn active-task">
+            <img
+              src={modalStore.state.value.icon}
+              alt={modalStore.title.value}
+            />
+            <p>{modalStore.title}</p>
+          </button>
+        )}
+      </div>
 
       <div className="locales-box">
         {locales.map(({ lang, title }) => (

@@ -10,6 +10,28 @@
   padding: 0.1875rem;
   background-color: #d4d4d4;
   border-bottom: 0.125rem solid #efefef;
+
+  .left-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    .active-task {
+      padding: 0.3125rem 1.5rem 0.3125rem 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.9;
+      background-color: #e7e5e5;
+      @include win95-border-inset();
+    }
+
+    .active-task img {
+      width: 1.1875rem;
+      margin-right: 0.25rem;
+    }
+  }
 }
 
 .navbar-logo {
